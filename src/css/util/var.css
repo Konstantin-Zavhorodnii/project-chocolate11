@@ -12,4 +12,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --bcg-color-primary: #e2e2e2;
+  --bcg-color-secondary: #1e1823;
+  --text-color-black: #111111;
+  --text-color-white: #ffffff;
+  --text-color-review-descr: rgba(17, 17, 17, 0.7);
+  --text-color-title: #fd9222;
 }
