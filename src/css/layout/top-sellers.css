@@ -1,0 +1,160 @@
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+.top-sellers {
+  padding-bottom: 72px;
+}
+@media (min-width: 768px) {
+  .top-sellers {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1158px) {
+  .top-sellers {
+    padding-bottom: 128px;
+  }
+}
+
+.sellers-title {
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: #111111;
+}
+@media (min-width: 768px) {
+  .sellers-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+.sellers-title-item {
+  color: #fd9222;
+}
+.list-sellers {
+  display: block;
+}
+@media (min-width: 768px) {
+  .list-sellers {
+    margin-bottom: 32px;
+
+    display: flex;
+    gap: 16px;
+  }
+}
+.list-sellers-item {
+  display: block;
+  text-align: center;
+}
+.list-sellers-item > .mobile {
+  text-align: start;
+}
+@media (min-width: 768px) {
+  .list-sellers-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+@media (max-width: 1158px) {
+  .list-sellers-item:last-child {
+    display: none;
+  }
+}
+@media (min-width: 1158px) {
+  .list-sellers-item {
+    flex-basis: calc((100% - 2 * 16px) / 3);
+  }
+}
+
+.sellers-images {
+  border-radius: 15px;
+}
+.sellers-decoration-text {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .sellers-decoration-text {
+    justify-content: space-between;
+  }
+}
+
+.sellers-text {
+  width: 306px;
+}
+@media (max-width: 768px) {
+  .sellers-text {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .sellers-text {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 1158px) {
+  .sellers-text {
+    width: 407px;
+    margin: 0;
+  }
+}
+
+.btn-sellers {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: #ffffff;
+
+  padding: 12px 28px;
+
+  margin-top: 20px;
+  width: 120px;
+  height: 41px;
+  border: none;
+  background: #fd9222;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-sellers {
+    font-size: 18px;
+    line-height: 1.2;
+
+    padding: 14px 40px;
+
+    width: 162px;
+    height: 50px;
+    margin: 0;
+  }
+}
+
+.btn-sellers:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .desck {
+    display: none;
+  }
+}
