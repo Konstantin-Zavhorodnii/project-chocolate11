@@ -10,12 +10,14 @@
   padding: 72px 0;
 }
 .subscribe-title {
+  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.166;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--bcg-color-white);
+  margin-bottom: 24px;
 }
 .subscribe-description {
   font-weight: 400;
@@ -23,4 +25,25 @@
   line-height: 1.285;
   letter-spacing: -0.02em;
   color: var(--text-color-white);
+  margin-bottom: 24px;
+}
+.subscribe-btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--text-color-white);
+  align-items: center;
+  padding: 14px 40px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
