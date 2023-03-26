@@ -104,6 +104,11 @@
   gap: 14px;
 }
 
+.footer-social-item {
+  width: 24px;
+  height: 24px;
+}
+
 .footer-svg {
   stroke: var(--bcg-color-white);
   fill: transparent;
