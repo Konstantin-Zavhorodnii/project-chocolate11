@@ -103,17 +103,6 @@
     }
   }
 
-.picture{
-    width: 224px;
-    height: 171px;
-}
-@media screen and (min-width: 1200px) {
-    .picture {
-        width: 206px;
-        height: 160px;
-    }
-  }
-
 .chocolate-name{
     font-size: 14px;
     line-height: 1.29;
