@@ -1,5 +1,6 @@
 /* util styles */
 @import url('./util/var.css');
+@import url('./util/hidden.css');
 
 /* base styles */
 @import url('./base/common.css');
