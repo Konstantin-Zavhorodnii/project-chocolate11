@@ -33,7 +33,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
 
-  color: #111111;
+  color: var(--text-color-black);
 }
 @media (min-width: 768px) {
   .sellers-title {
@@ -43,7 +43,7 @@
   }
 }
 .sellers-title-item {
-  color: #fd9222;
+  color: var(--text-color-title);
 }
 .list-sellers {
   display: block;
@@ -126,7 +126,7 @@
   width: 120px;
   height: 41px;
   border: none;
-  background: #fd9222;
+  background: var(--text-color-title);
   border-radius: 100px;
   cursor: pointer;
 }
@@ -146,7 +146,7 @@
 
 .btn-sellers:hover {
   background-color: #fcf1e0;
-  color: #fd9222;
+  color: var(--text-color-title);
 }
 @media (min-width: 768px) {
   .mobile {
