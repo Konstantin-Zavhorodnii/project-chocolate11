@@ -1,5 +1,5 @@
 .our-products {
-  padding: 36px 0;
+  padding-bottom: 72px;
   width: 100%;
   margin: 0 auto;
 }
@@ -13,13 +13,13 @@
 @media (min-width:768px) {
   .our-products {
     max-width: 768px;
-    padding: 50px 0;
+    padding-bottom: 100px;
   }
 }
 
 @media (min-width:1200px) {
   .our-products {
-    padding: 60px 0;
+    padding-bottom: 128px;
     max-width: 1200px;
   }
 }
