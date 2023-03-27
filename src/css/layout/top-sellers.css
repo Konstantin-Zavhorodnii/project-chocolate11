@@ -81,6 +81,7 @@
 
 .sellers-images {
   border-radius: 15px;
+  height: 100%;
 }
 .sellers-decoration-text {
   display: flex;
