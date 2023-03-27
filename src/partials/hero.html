@@ -1,3 +1,98 @@
 <div class="container">
-  <section id="hero" class="hero"></section>
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <h1 hidden class="visually-hidden">
+        SIMPLY CHOCOLATE
+      </h1>
+      <h2 class="hero-title">
+        Treat yourself or a loved one to 
+        our finest ingredients for a moment 
+        of pure delight!
+      </h2>
+      
+      <div class="buttons-container">
+        <button type="button" class="buy-btn" data-modal-open>Buy now</button>
+
+        <a class="how-made-btn" href="#how">How it’s made</a>
+      
+        <a class="scroll-btn" href="#footer">
+          scroll down
+          <div class="scroll-div">
+            <svg class="scroll-svg" width="22px" height="22px">
+              <use href="../img/icons.svg#scroll-down"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+    </div>
+      
+  
+
+      
+
+
+
+      
+  </section>
+</div>
+    
+  
+<div class="hero-backdrop is-hidden" data-modal>
+    <div class="hero-modal">
+      <button class="hero-close-btn" data-modal-close>
+        <svg class="hero-close-svg" width="14px" height="14px">
+          <use href="../img/icons.svg#x"> </use>
+        </svg>
+      </button>
+      <form class="hero-form">
+        <h3 class="hero-form-title">
+          BUY <span class="hero-form-span">NOW</span> 
+        </h3>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <label for="Name" class="hero-label">
+          Personal information </label>
+          <div class="hero-input-container">
+            <input type="text" class="hero-half-input" id="Name" placeholder="Name" pattern="[a-z]{3,12}" required>
+            <input type="text" class="hero-half-input" id="Surname" placeholder="Surname" pattern="[a-z]{3,12}" required>
+          </div>
+          
+        
+        
+
+        <label for="Email" class="hero-label">Email</label>
+        <div class="hero-input-container">
+          <input type="email" class="hero-input" id="Email" placeholder="Enter your email" required>
+        </div>
+        
+        
+        <label for="Phone" class="hero-label">Phone number</label>
+        <div class="hero-input-container">
+          <input type="tel" class="hero-input" id="Phone" placeholder="Phone number" pattern="[0-9]{9}" required>
+        </div>
+        
+
+        <label for="Card" class="hero-label">Card number</label>
+        <div class="hero-input-container">
+          <input type="tel" class="hero-input" id="Card" placeholder="Card number" pattern="[0-9]{16}" required>
+        </div>
+        
+
+        <label for="Comment" class="hero-label">Comment</label>
+        <div class="hero-input-container">
+          <textarea  name="Comment" id="Comment" class="hero-input"  placeholder="Enter-text"></textarea>
+        </div>
+        
+
+        <button type="submit" class="hero-form-btn">Submit</button>
+      </form>
+      
+
+    </div>
 </div>
