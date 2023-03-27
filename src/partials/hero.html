@@ -13,20 +13,20 @@
       <div class="buttons-container">
         <button type="button" class="buy-btn" data-modal-open>Buy now</button>
 
-        <a class="how-made-btn" href="https://trello.com/b/luInpQdJ/%D0%B3%D1%83%D0%BF%D0%BF%D0%B0-11">How it’s made</a>
+        <a class="how-made-btn" href="#how">How it’s made</a>
       
-        <a class="scroll-btn">
+        <a class="scroll-btn" href="#footer">
           scroll down
           <div class="scroll-div">
             <svg class="scroll-svg" width="22px" height="22px">
-              <use href="../img/icons.svg#scroll-down">
+              <use href="../img/icons.svg#scroll-down"></use>
             </svg>
           </div>
         </a>
       </div>
 
       
-      </div>
+    </div>
       
   
 
@@ -35,11 +35,11 @@
 
 
       
-    
-    </div>
-    
   </section>
-  <div class="hero-backdrop is-hidden" data-modal>
+</div>
+    
+  
+<div class="hero-backdrop is-hidden" data-modal>
     <div class="hero-modal">
       <button class="hero-close-btn" data-modal-close>
         <svg class="hero-close-svg" width="14px" height="14px">
@@ -56,7 +56,7 @@
           <li></li>
         </ul>
 
-        <label for="Name" for="Surname" class="hero-label">
+        <label for="Name" class="hero-label">
           Personal information </label>
           <div class="hero-input-container">
             <input type="text" class="hero-half-input" id="Name" placeholder="Name" pattern="[a-z]{3,12}" required>
@@ -80,13 +80,13 @@
 
         <label for="Card" class="hero-label">Card number</label>
         <div class="hero-input-container">
-          <input type="" class="hero-input" id="Card" placeholder="Card number" pattern="[0-9]{16}" required>
+          <input type="tel" class="hero-input" id="Card" placeholder="Card number" pattern="[0-9]{16}" required>
         </div>
         
 
         <label for="Comment" class="hero-label">Comment</label>
         <div class="hero-input-container">
-          <textarea name="" class="hero-input" id="" placeholder="Enter-text"></textarea>
+          <textarea  name="Comment" id="Comment" class="hero-input"  placeholder="Enter-text"></textarea>
         </div>
         
 
