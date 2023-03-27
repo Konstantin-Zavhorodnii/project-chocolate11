@@ -1,5 +1,5 @@
 .hero {
-    max-width: 1158px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 72px;
 }
@@ -131,7 +131,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    padding: 88px 0;
+    padding: 24px 0;
     padding-bottom: 12px;
     transition: opacity 500ms, visibility 500ms;
     z-index: 3;
@@ -152,6 +152,7 @@
     height: 100%;
     background-color: var(--text-color-white);
     overflow: auto;
+    border-radius: 15px;
 }
 
 .hero-close-btn {
@@ -378,4 +379,8 @@ textarea {
 
 .buy-weight-btn:hover, .buy-weight-btn:focus {
     outline: 1px solid var(--text-color-title);
+}
+
+.iti {
+    width: 100%;
 }
