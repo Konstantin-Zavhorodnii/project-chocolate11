@@ -17,7 +17,7 @@
               alt="Victoria"
             />
           </div>
-          <h3 class="reviews-item-title">Victoria Dobrzhanska</h3>
+          <h3 class="reviews-subtitle">Victoria Dobrzhanska</h3>
           <p class="reviews-text">
             I love this chocolate bar. Perfect combination of light crispy
             wafer, covered in a thin layer chocolate.
@@ -35,7 +35,7 @@
               alt="Nazar"
             />
           </div>
-          <h3 class="reviews-item-title">Nazar Babenko</h3>
+          <h3 class="reviews-subtitle">Nazar Babenko</h3>
           <p class="reviews-text">
             This chocolate confection is a delight! A delight! The wafer is
             light and crisp, the hazelnut cream is smooth, and the chocolate is
@@ -54,7 +54,7 @@
               alt="Olena"
             />
           </div>
-          <h3 class="reviews-item-title">Olena Kampusch</h3>
+          <h3 class="reviews-subtitle">Olena Kampusch</h3>
           <p class="reviews-text">
             Chocolate is a family favourite treat. Love the delicious smooth
             chocolate and the creaminess inside. The wafer is soft but crunchy.
@@ -72,7 +72,7 @@
               alt="Natalia"
             />
           </div>
-          <h3 class="reviews-item-title">Natalia Sus</h3>
+          <h3 class="reviews-subtitle">Natalia Sus</h3>
           <p class="reviews-text">
             The chocolate assortment was delicious. Both dark and milk chocolate
             pieces were smooth and just right on the sweetness level.
@@ -90,7 +90,7 @@
               alt="Danilo"
             />
           </div>
-          <h3 class="reviews-item-title">Danilo Nottingham</h3>
+          <h3 class="reviews-subtitle">Danilo Nottingham</h3>
           <p class="reviews-text">
             This is delicious. It so rich and flavorful you don’t need to use as
             many. I love topping an apple with almond butter and these chips for
@@ -109,7 +109,7 @@
               alt="Irina"
             />
           </div>
-          <h3 class="reviews-item-title">Irina Tydnyuk</h3>
+          <h3 class="reviews-subtitle">Irina Tydnyuk</h3>
           <p class="reviews-text">
             This is simply the best chocolate around, and I'm just thrilled to
             support a local company! Best local chocolate - world class :)
@@ -118,6 +118,47 @@
       </ul>
       <div class="swiper-pagination"></div>
     </div>
-    <button class="reviews-button" type="button">Leave a review</button>
+    <button class="reviews-button js-open-modal" data-modal="2" type="button">
+      Leave a review
+    </button>
   </div>
+  <div class="modal review-modal" data-modal="2">
+    <button class="modal-close js-modal-close" data-modal="2">
+      <svg class="modal-icon">
+        <use href="../img/icons.svg#x"></use>
+      </svg>
+    </button>
+    <form>
+      <h2 class="modal-title title">
+        Leave a review about<br />
+        <span class="reviews-title-brand">our chocolate</span>
+      </h2>
+      <label for="user-name"></label>
+      <input
+        class="review-input"
+        type="text"
+        name="user-name"
+        id="user-name"
+        placeholder="Name"
+      />
+      <label for="user-email"></label>
+      <input
+        class="review-input"
+        type="email"
+        name="user-email"
+        id="user-email"
+        placeholder="Email"
+      />
+      <label for="user-phone"></label>
+      <input
+        class="review-input"
+        type="tel"
+        name="user-phone"
+        id="user-phone"
+        placeholder="Phone number"
+      />
+      <textarea name="" id=""></textarea>
+    </form>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
 </section>
