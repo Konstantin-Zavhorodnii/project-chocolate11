@@ -1,4 +1,4 @@
- header-html
-import './scrol'
+header - html
 import './js/slider';
+import './js/scrol';
 main
