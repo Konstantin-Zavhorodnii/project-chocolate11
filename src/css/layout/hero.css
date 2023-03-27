@@ -1,5 +1,7 @@
 .hero {
-    padding: 0 32px 72px 32px;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-bottom: 72px;
 }
 
 .hero-container {
@@ -7,8 +9,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 40px;
+
 }
 
+.hero-content-container {
+    padding: 381px 40px 40px 40px;
+}
 
 .hero-title {
     font-family: 'Montserrat';
@@ -17,7 +23,6 @@
     line-height: 1.21;
     letter-spacing: -0.03em;
     color: var(--text-color-white);
-    padding: 381px 612px 0 40px;
     margin-bottom: 32px;
 }
 
@@ -28,7 +33,6 @@
 
 .buy-btn {
     display: block;
-    margin: 0 14px 40px 40px;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 14px;
@@ -38,6 +42,7 @@
     background-color: var(--text-color-title);
     border-radius: 100px;
     border: none;
+    margin-right: 14px;
 }
 
 .buy-btn:hover, .buy-btn:focus {
@@ -81,7 +86,6 @@
     border: none;
     background-color: transparent;
     border-radius: 10px;
-    margin-right: 40px;
     padding: 5px 16px;
 }
 
@@ -198,37 +202,79 @@
 
 .hero-input {
     font-family: 'Montserrat';
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
+    color: var(--text-color-black);
     width: 100%;
     height: 66px;
     padding-left: 24px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 13px;
+    transition-property: outline;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-input:valid {
+    outline: 1px solid green;
+}
+
+.hero-input:invalid {
+    outline: 1px solid red;
 }
 
 .hero-half-input {
     font-family: 'Montserrat';
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
+    color: var(--text-color-black);
     width: 50%;
     height: 66px;
     padding-left: 24px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 13px;
+    transition-property: outline;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-half-input:valid {
+    outline: 1px solid green;
+}
+
+.hero-half-input:invalid {
+    outline: 1px solid red;
+}
+
+.hero-input::placeholder, .hero-half-input::placeholder{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.hero-input:focus, .hero-half-input:focus {
+    outline: 1px solid var(--text-color-title);
 }
 
 textarea {
     resize: none;
     padding-top: 22px;
+}
+
+.hero-textarea:valid {
+    outline: 1px solid green;
+}
+
+.hero-textarea:invalid {
+    outline: 1px solid red;
 }
 
 .hero-input-container {
@@ -248,4 +294,86 @@ textarea {
     background-color: var(--text-color-title);
     padding: 14px 40px 14px 40px;
     border: none;
+}
+
+.hero-form-btn:focus{
+    outline: none;
+}
+
+.hero-card-input{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-card-input:valid {
+    outline: 1px solid green;
+}
+
+.hero-card-input:invalid {
+    outline: 1px solid red;
+}
+.hero-card-input:valid ~ .card-images {
+    display: none;
+}
+
+.card-images {
+    display: flex;
+    position: absolute;
+    top: 22px;
+    right: 24px;
+}
+
+.buy-list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.buy-card {
+    max-width: 160px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;  
+    background-color: var(--text-color-white);
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-card:hover, .buy-card:focus {
+    outline: 1px solid var(--text-color-title);
+    cursor: pointer;
+}
+
+
+.buy-card-container {
+    padding: 24px 20px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-weight-btn {
+    margin-top: 14px;
+    padding: 8px 29px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    background: #FAFAFA;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-card:hover  .buy-weight-btn {
+    outline: 1px solid var(--text-color-title);
+}
+
+.buy-weight-btn:hover, .buy-weight-btn:focus {
+    outline: 1px solid var(--text-color-title);
 }
