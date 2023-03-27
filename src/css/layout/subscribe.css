@@ -86,7 +86,7 @@
     margin-left: auto;
     margin-right: auto;
     background-position: center;
-    padding: 62px 42px 0 42px;
+    padding: 62px 42px 63px 42px;
   }
 }
 /* =================================TABLET======================== */
@@ -111,7 +111,7 @@
     margin-left: auto;
     margin-right: auto;
     background-position: center;
-    padding: 72px 195px 0 195px;
+    padding: 72px 195px;
   }
 }
 /* =========================DESKTOP======================= */
