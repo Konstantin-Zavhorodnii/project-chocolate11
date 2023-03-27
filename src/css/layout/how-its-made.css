@@ -1,0 +1,39 @@
+.how-its-made {
+    padding-bottom: 128px;
+}
+
+.how-its-made-title {
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.how-its-made-title.two {
+    margin-left: 8px;
+    color: #FD9222;
+}
+
+.how-its-made-contain {
+    display: flex;
+    gap: 20px;
+    background-color: #FFFFFF;
+}
+
+.how-its-made-video {
+    width: 600px;
+    height: 400px;
+}
+
+.how-its-made-img {
+    max-width: 600px;
+    height: 400px;
+}
+
+.how-its-made-items {
+    list-style-type: revert;
+    gap: 24px;
+}
