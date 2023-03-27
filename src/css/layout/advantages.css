@@ -13,7 +13,16 @@
 }
 
 .advantages-item {
-    padding-right: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.advantages-item:not(:last-child):after {
+    content: '';
+    width: 1px;
+    height: 124px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: translateX(18px);
 }
 
 .advantages-item-content {
