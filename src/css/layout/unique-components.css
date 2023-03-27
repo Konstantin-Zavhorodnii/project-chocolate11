@@ -1,14 +1,17 @@
 .components{ 
     padding-bottom: 72px;
+    padding-top: 72px;
 }
 @media screen and (min-width: 768px) {
     .components {
         padding-bottom: 100px;
+        padding-top: 100px;
     }
   }
 @media screen and (min-width: 1200px) {
     .components {
         padding-bottom: 128px;
+        padding-top: 128px;
     }
   }
 
@@ -63,15 +66,17 @@
     }
   }
 
-.product-type{
+.chocolate{
+    color: #111111;
     border: 1px Solid
     #FD9222;
     border-radius: 15px;
     width: 336px;
     height: 270px;
 }
+
 @media screen and (min-width: 1200px) {
-    .product-type {
+    .chocolate {
         width: 270px;
         height: 270px;
     }
@@ -87,30 +92,54 @@
     color: #FFFFFF;
 }
 
-.chocolate-window{
-    position: relative;
-    overflow: hidden;
-    padding: 28px 42px 28px 42px;
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
 }
-@media screen and (min-width: 375px) {
-    .chocolate-window {
-    padding: 28px 56px 28px 56px;
-    }
-  }
-@media screen and (min-width: 1200px) {
-    .chocolate-window {
-        padding: 28px;
-    }
-  }
+  
+.flip-card-inner {
+    position: relative;
+    height: 270px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    border-radius: 15px;
+}
 
-.chocolate-name{
+.photo-chocolate{
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+
+.text-name{
+    margin-top: 36px;
+    margin-left: 28px;
     font-size: 14px;
     line-height: 1.29;
-    margin-top: 36px;
-    margin-bottom: 0;
 }
+  
+.flip-card-back {
+    background-color: #FFFFFF;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 15px;
 
-.chocolate-info{
     position: absolute;
     background-color: #E2E2E2;
     color: #111111;
@@ -118,15 +147,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translateY(100%);
-    border-radius: 15px;
-    transition: transform 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     overflow: scroll;
-}
-    
-.chocolate-window:hover .chocolate-info{
-    transform: translateY(0);
 }
 
 .windows-info{
@@ -153,12 +174,16 @@
 }
 .description-button:hover,
 .description-button:focus{
-background-color: #FD9222;
-color: #FFFFFF;
+    background-color: #FD9222;
+    color: #FFFFFF;
 }
 
 .description-text{
     padding: 14px 28px 28px 28px;
     margin: 0;
 }
+
+
+
+
 
