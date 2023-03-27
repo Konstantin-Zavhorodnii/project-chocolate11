@@ -1,3 +1,127 @@
-<div class="container">
-  <section class="hero"></section>
+  <section id="hero" class="hero">
+  <div class="container">
+    <div class="hero-container">
+      <h1 hidden class="visually-hidden">
+        SIMPLY CHOCOLATE
+      </h1>
+      <div class="hero-content-container">
+        <h2 class="hero-title">
+          Treat yourself or a loved one to <br>
+          our finest ingredients for a moment <br>
+          of pure delight!
+        </h2>
+        
+        <div class="buttons-container">
+          <button type="button" class="buy-btn" data-modal-open>Buy now</button>
+
+          <a class="how-made-btn" href="#how">How it’s made</a>
+        
+          <a class="scroll-btn" href="#footer">
+            scroll down
+            <div class="scroll-div">
+              <svg class="scroll-svg" width="22px" height="22px">
+                <use href="../img/icons.svg#scroll-down"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+     
+    </div>   
+  </div>
+</section>
+    
+  
+<div class="hero-backdrop is-hidden" data-modal>
+    <div class="hero-modal">
+      <button class="hero-close-btn" data-modal-close>
+        <svg class="hero-close-svg" width="14px" height="14px">
+          <use href="../img/icons.svg#x"> </use>
+        </svg>
+      </button>
+      <form class="hero-form">
+        <h3 class="hero-form-title">
+          BUY <span class="hero-form-span">NOW</span> 
+        </h3>
+        <ul class="buy-list">
+          <li class="buy-card">
+            <div class="buy-card-container">
+              <img src="../img/desktop/buy-now-chocolate1.jpg" alt="dark chocolate" 
+                srcset="../img/desktop/buy-now-chocolate1.jpg 1x, ../img/desktop-photos@2/buy-now-chocolate1@2.jpg 2x"
+                width="120">
+              <button class="buy-weight-btn" type="button">100 g</button>
+            </div>
+          </li>
+          <li class="buy-card">
+            <div class="buy-card-container">
+              <img src="../img/desktop/buy-now-chocolate2.jpg" alt="white chocolate"
+              srcset="../img/desktop/buy-now-chocolate2.jpg 1x, ../img/desktop-photos@2/buy-now-chocolate2@2.jpg 2x"
+              width="120">
+              <button class="buy-weight-btn" type="button">200 g</button>
+            </div>
+          </li>
+          <li class="buy-card">
+            <div class="buy-card-container">
+              <img src="../img/desktop/buy-now-chocolate3.jpg" alt="milk chocolate" 
+              srcset="../img/desktop/buy-now-chocolate3.jpg 1x, ../img/desktop-photos@2/buy-now-chocolate3@2.jpg 2x" 
+              width="120">
+              <button class="buy-weight-btn" type="button">300 g</button>
+            </div>
+          </li>
+        </ul>
+
+        <label for="Name" class="hero-label">
+          Personal information </label>
+          <div class="hero-input-container">
+            <input type="text" class="hero-half-input" id="Name" placeholder="Name" pattern="[a-z]{3,12}" required>
+            <input type="text" class="hero-half-input" id="Surname" placeholder="Surname" pattern="[a-z]{3,12}" required>
+          </div>
+          
+        
+        
+
+        <label for="Email" class="hero-label">Email</label>
+        <div class="hero-input-container">
+          <input type="email" class="hero-input" id="Email" placeholder="Enter your email" minlength="6" required>
+        </div>
+        
+        
+        <label for="phone" class="hero-label">Phone number</label>
+        <div class="hero-input-container">
+          <input type="tel" class="hero-input" id="phone" name="phone" placeholder="Phone number" pattern="[0-9]{10}" required>
+        </div>
+        
+
+        <label for="Card" class="hero-label">Card number</label>
+        <div class="hero-input-container">
+          <div class="hero-card-input">
+            <input type="tel" class="hero-input" id="Card" placeholder="Card number" minlength="1" pattern="[0-9]{16}" required>
+            <div class="card-images">
+              <!-- <svg class="card-svg"  height="20px">
+                <use href="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"> </use>
+              </svg>
+              <svg class="card=svg"  height="20px">
+                <use href="https://bin.bnbstatic.com/static/images/fiat/card/mastercard.svg"> </use>
+              </svg> -->
+              <img src="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg" alt="visa" class="card-img">
+              <img src="https://bin.bnbstatic.com/static/images/fiat/card/mastercard.svg" alt="mastercard" class="card-img">
+            </div>
+          </div>
+          
+          
+        </div>
+        
+
+        <label for="Comment" class="hero-label">Comment</label>
+        <div class="hero-input-container">
+          <textarea  name="Comment" id="Comment" class="hero-input hero-textarea"  placeholder="Enter-text" required></textarea>
+        </div>
+        
+
+        <button type="submit" class="hero-form-btn">Submit</button>
+      </form>
+      
+
+    </div>
 </div>
