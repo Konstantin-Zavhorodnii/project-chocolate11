@@ -30,8 +30,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero {
     background-image: url(../../img/mobile@2/subcribe-mobile@2x.jpg);
     background-size: 375px, 370px;
@@ -46,8 +46,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
     background-image: url(../../img/tablet@2/subcribe-tablet@2x.jpg);
     background-size: 768px, 370px;
@@ -62,8 +62,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     background-image: url(../../img/desktop-photos@2/subscribe-desk@2.jpg);
     background-size: 1200px, 370px;
@@ -150,20 +150,20 @@
     margin-bottom: 24px;
   }
 
-  
+
   .-subscribe-label-text {
     color: #FD9222;
   }
-  
+
   .form-subscribe {
     padding: 40px;
   }
-  
+
   .input-div {
     display: flex;
     align-items: end;
   }
-  
+
   .subscribe-input {
     width: 313px;
     height: 52px;
@@ -176,36 +176,37 @@
 }
 
 
-  .subscribe-input:focus {
-    outline: 1px solid var(--text-color-title);
-  }
-  
-  .subscribe-input::placeholder {
-    display: flex;
-    align-items: center;
-    /* padding-left: 24px; */
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
-  }
-  
-  .subscribe-btn-modal {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    text-align: center;
-    width: 137px;
-    height: 52px;
-    background: #FD9222;
-    border-radius: 100px;
-    border: none;
-    transform: translateX(8px);
-  }
+.subscribe-input:focus {
+  outline: 1px solid var(--text-color-title);
+}
+
+.subscribe-input::placeholder {
+  display: flex;
+  align-items: center;
+  /* padding-left: 24px; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.subscribe-btn-modal {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 137px;
+  height: 52px;
+  background: #FD9222;
+  border-radius: 100px;
+  border: none;
+  transform: translateX(8px);
+}
+
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -232,15 +233,16 @@
   height: 196px;
 
   position: relative;
-  }
+}
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .section-hero {
     background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x);
   }
 }
+
 /* ================================MODAL============================== */
 .modal.active,
 .overlay.active {
@@ -249,9 +251,9 @@
 }
 
 .modal__cross {
-width: 100%;
+  width: 100%;
   height: 100%;
- 
+
   stroke: #ffffff;
   position: absolute;
   top: 24px;
@@ -259,7 +261,7 @@ width: 100%;
   cursor: pointer;
 }
 
-.subscribe-label{
+.subscribe-label {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 24px;
@@ -268,7 +270,7 @@ width: 100%;
   text-transform: uppercase;
   color: black;
 }
-}
+
 
 .-subscribe-label-text {
   color: #fd9222;
