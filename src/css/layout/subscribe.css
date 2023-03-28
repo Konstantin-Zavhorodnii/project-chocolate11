@@ -114,7 +114,6 @@
   margin-top: 38px;
 }
 
-
 /* =====================MOBILE================================ */
 @media screen and (max-width: 767px) {
   .subscribe-title {
@@ -169,8 +168,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .section-subscribe {
       background-image: url(../../img/tablet@2/subcribe-tablet@2x.jpg);
       background-size: 768px, 370px;
@@ -233,8 +232,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .section-subscribe {
       background-image: url(../img/desktop-photos@2/subscribe-desk@2.jpg);
       background-size: 1200px, 370px;
@@ -257,47 +256,48 @@
     background-color: #fafafa;
   }
 
-/* ============================================MODAL======================================== */
+  /* ============================================MODAL======================================== */
 
-.overlay {
-  opacity: 0;
-  visibility: hidden;
+  .overlay {
+    opacity: 0;
+    visibility: hidden;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
-  transition: 0.3s all;
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .section-hero {
-    background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    transition: 0.3s all;
   }
-}
 
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x);
+    }
+  }
 
-.modal__cross {
-  width: 100%;
-  height: 100%;
-  stroke: #ffffff;
-}
+  .modal.active,
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
 
-.-subscribe-label-text {
-  color: #fd9222;
-}
+  .modal__cross {
+    width: 100%;
+    height: 100%;
+    stroke: #ffffff;
+  }
 
-.modal-subscribe-svg {
-  width: 28px;
-  height: 28px;
+  .-subscribe-label-text {
+    color: #fd9222;
+  }
+
+  .modal-subscribe-svg {
+    width: 28px;
+    height: 28px;
+  }
 }
