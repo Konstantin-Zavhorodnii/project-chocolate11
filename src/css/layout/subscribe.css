@@ -150,9 +150,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     margin-bottom: 24px;
   }
 
-
   .-subscribe-label-text {
-    color: #FD9222;
+    color: #fd9222;
   }
 
   .form-subscribe {
@@ -171,10 +170,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
     padding-left: 24px;
-
   }
 }
 
+.subscribe-input:focus {
+  outline: 1px solid var(--text-color-title);
+}
 
 .subscribe-input:focus {
   outline: 1px solid var(--text-color-title);
@@ -197,16 +198,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+
   color: #FFFFFF;
   text-align: center;
   width: 137px;
   height: 52px;
   background: #FD9222;
+
   border-radius: 100px;
   border: none;
   transform: translateX(8px);
 }
-
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -271,7 +273,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   color: black;
 }
 
-
 .-subscribe-label-text {
   color: #fd9222;
 }
@@ -281,7 +282,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   text-align: left;
 
   background-color: var(--bcg-color-white);
-
 }
 
 .input-div {
@@ -300,7 +300,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 30px;
 }
-
 
 .subscribe-input:focus {
   outline: 1px solid var(--text-color-title);
