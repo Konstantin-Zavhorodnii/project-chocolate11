@@ -95,6 +95,14 @@
     background-position: center;
     padding: 62px 42px 63px 42px;
   }
+  .subscribe-modal {
+    height: 350px;
+    background-color: #fafafa;
+  }
+  .modal-close {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* =================================TABLET======================== */
@@ -149,7 +157,7 @@
     margin-bottom: 24px;
   }
 }
-
+/* ============================================MODAL======================================================== */
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -288,4 +296,3 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
-
