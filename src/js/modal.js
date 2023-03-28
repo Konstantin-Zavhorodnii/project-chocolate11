@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close'),
-    popupButton = document.querySelector('.js-pop-up'),
-    form = document.querySelector('#form');
-  modalSuccess = document.querySelector('#success-modal');
+    popupButton = document.querySelectorAll('.js-pop-up'),
+    form = document.querySelectorAll('.form');
+  modalSuccess = document.querySelector('.success-modal');
 
   function clearFormFields() {
-    const modalFiends = formModal.querySelectorAll('input');
+    const modalFiends = form.querySelectorAll('input');
 
     modalFiends.forEach(field => {
       field.value = '';
@@ -83,18 +83,20 @@ document.addEventListener('DOMContentLoaded', function () {
   //       openSuccessModal();
   //     });
   //   }); // end foreach
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    var parentModal = popupButton.closest('.modal');
-    parentModal.classList.remove('active');
-    setTimeout(function () {
-      modalSuccess.classList.add('active');
-    }, 300);
-    const modalFields = parentModal.querySelectorAll('input');
-
-    modalFields.forEach(field => {
-      field.value = '';
+  form.forEach(function (item) {
+    item.addEventListener('submit', e => {
+      e.preventDefault();
+      popupButton.forEach(function (button) {
+        var parentModal = button.closest('.modal');
+        parentModal.classList.remove('active');
+        const modalFields = parentModal.querySelectorAll('input');
+        modalFields.forEach(field => {
+          field.value = '';
+        });
+      });
+      setTimeout(function () {
+        modalSuccess.classList.add('active');
+      }, 300);
     });
   });
 
