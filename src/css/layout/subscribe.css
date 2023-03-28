@@ -399,3 +399,11 @@
 .subscribe-input:focus {
   outline: 1px solid var(--text-color-title);
 }
+
+.subscribe-input:valid {
+  outline: 1px solid #008000;
+}
+
+.subscribe-input:invalid {
+  outline: #ff0000;
+}
