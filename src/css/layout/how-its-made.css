@@ -15,8 +15,8 @@
 }
 
 .how-its-made-title {
-    justify-content: center;
-    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.16;
@@ -25,9 +25,7 @@
 }
 
 .how-its-made-title.two {
-    margin-left: 8px;
     color: #FD9222;
-    padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -156,8 +154,8 @@
 .how-its-made-svg {
     background-color: #FFFFFF;
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 0;
+    left: 0;
     border-radius: 50px;
 }
 

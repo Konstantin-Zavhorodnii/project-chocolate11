@@ -266,6 +266,12 @@
   background-color: var(--bcg-color-hover-orange-btn);
   color: var(--text-color-title);
 }
+
+.modal-subscribe-svg {
+  width: 28px;
+  height: 28px;
+}
+
 .subscribe-input:focus {
   outline: 1px solid var(--text-color-title);
 }
@@ -282,3 +288,4 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+
