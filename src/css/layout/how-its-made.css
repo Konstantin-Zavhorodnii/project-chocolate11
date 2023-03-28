@@ -50,6 +50,7 @@
     padding-bottom: 28px;
     padding-left: 32px;
     padding-top: 32px;
+    letter-spacing: 0.04em;
 }
 
 .how-its-made-items {
@@ -78,7 +79,6 @@
     max-width: 516px;
     padding-right: 40px;
 }
-
 
 
 .video-container {
