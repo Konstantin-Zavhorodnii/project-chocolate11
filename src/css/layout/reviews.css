@@ -87,7 +87,8 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.reviews-button:hover {
+.reviews-button:hover,
+.reviews-button:focus {
   background-color: var(--text-color-title);
   color: var(--text-color-white);
 }
@@ -139,6 +140,13 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 13px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.reviews-input:focus {
+  outline: none;
+  border: 1px solid var(--text-color-title);
 }
 
 .reviews-input-container {
@@ -165,11 +173,26 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.reviews-submit:hover {
+.reviews-submit:hover,
+.reviews-submit:focus {
   background-color: var(--bcg-color-hover-orange-btn);
   color: var(--text-color-title);
 }
 
+.reviews-pop-up {
+  padding: 163px 49px 163px 170px;
+}
+
 .iti {
   display: block;
+}
+
+.iti__selected-flag {
+  border-radius: 13px;
+  padding-left: 20px;
+  padding-right: 12px;
+}
+
+.iti--allow-dropdown input[type='tel'] {
+  padding-left: 66px;
 }

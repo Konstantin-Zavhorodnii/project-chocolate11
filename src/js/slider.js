@@ -36,6 +36,11 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
   direction: 'horizontal',
   loop: true,
 
+  autoplay: {
+    delay: 5000,
+  },
+  speed: 1000,
+
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -43,20 +48,24 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
   },
 
   slidesPerView: 1,
+  slidesPerGroup: 1,
 
   breakpoints: {
     375: {
       slidesPerView: 1,
-      spaceBetween: 0,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
     },
 
     768: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 16,
     },
 
     1200: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 28,
     },
   },
