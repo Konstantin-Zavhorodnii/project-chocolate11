@@ -63,6 +63,7 @@
 @media screen and (min-width: 768px) {
     .chocolate-list {
         gap: 32px;
+        flex-flow: wrap;
     }
 }
 
@@ -70,6 +71,7 @@
     .chocolate-list {
         flex-wrap: nowrap;
         gap: 19px;
+        flex-flow: nowrap;
     }
 }
 
@@ -86,6 +88,18 @@
         width: 270px;
         height: 270px;
     }
+}
+@media screen and (min-width: 768px){
+    .zero {order: 0;}
+    .one {order: 2;}
+    .two {order: 3;}
+    .three {order: 1;}
+}
+@media screen and (min-width: 1200px){
+    .zero {order: 0;}
+    .one {order: 1;}
+    .two {order: 2;}
+    .three {order: 3;}
 }
 
 .orange {
@@ -127,6 +141,7 @@
 
 .flip-card-front {
     border-radius: 15px;
+    padding: 0 28px;
 }
 
 .photo-chocolate {
@@ -137,7 +152,6 @@
 
 .text-name {
     margin-top: 36px;
-    margin-left: 28px;
     font-size: 14px;
     line-height: 1.29;
 }
@@ -165,7 +179,7 @@
     list-style-type: none;
     display: flex;
     gap: 6px;
-    padding-bottom: 14px;
+    margin-bottom: 14px;
 }
 
 .description-button {
@@ -201,4 +215,5 @@
         -webkit-line-clamp: 7;
     }
 }
+
 
