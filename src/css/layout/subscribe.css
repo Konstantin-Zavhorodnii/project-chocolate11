@@ -30,8 +30,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero {
     background-image: url(../../img/mobile@2/subcribe-mobile@2x.jpg);
     background-size: 375px, 370px;
@@ -46,8 +46,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
     background-image: url(../../img/tablet@2/subcribe-tablet@2x.jpg);
     background-size: 768px, 370px;
@@ -62,8 +62,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     background-image: url(../../img/desktop-photos@2/subscribe-desk@2.jpg);
     background-size: 1200px, 370px;
@@ -177,6 +177,10 @@
   outline: 1px solid var(--text-color-title);
 }
 
+.subscribe-input:focus {
+  outline: 1px solid var(--text-color-title);
+}
+
 .subscribe-input::placeholder {
   display: flex;
   align-items: center;
@@ -194,11 +198,13 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #ffffff;
+
+  color: #FFFFFF;
   text-align: center;
   width: 137px;
   height: 52px;
-  background: #fd9222;
+  background: #FD9222;
+
   border-radius: 100px;
   border: none;
   transform: translateX(8px);
@@ -232,12 +238,13 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .section-hero {
     background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x);
   }
 }
+
 /* ================================MODAL============================== */
 .modal.active,
 .overlay.active {
