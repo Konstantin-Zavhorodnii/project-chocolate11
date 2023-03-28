@@ -9,8 +9,8 @@
           <div class="reviews-image">
             <img
               srcset="
-                ../img/desktop/reviews-victoria.jpg            1x,
-                ../img/desktop-photos@2/reviews-victoria@2.jpg 2x
+                /img/desktop/reviews-victoria.jpg            1x,
+                /img/desktop-photos@2/reviews-victoria@2.jpg 2x
               "
               src="../img/desktop/reviews-victoria.jpg"
               width="80"
@@ -27,8 +27,8 @@
           <div class="reviews-image">
             <img
               srcset="
-                ../img/desktop/reviews-nazar.jpg            1x,
-                ../img/desktop-photos@2/reviews-nazar@2.jpg 2x
+                /img/desktop/reviews-nazar.jpg            1x,
+                /img/desktop-photos@2/reviews-nazar@2.jpg 2x
               "
               src="../img/desktop/reviews-nazar.jpg"
               width="80"
@@ -46,8 +46,8 @@
           <div class="reviews-image">
             <img
               srcset="
-                ../img/desktop/reviews-olena.jpg            1x,
-                ../img/desktop-photos@2/reviews-olena@2.jpg 2x
+                /img/desktop/reviews-olena.jpg            1x,
+                /img/desktop-photos@2/reviews-olena@2.jpg 2x
               "
               src="../img/desktop/reviews-olena.jpg"
               width="80"
@@ -64,8 +64,8 @@
           <div class="reviews-image">
             <img
               srcset="
-                ../img/desktop/reviews-natalia.jpg            1x,
-                ../img/desktop-photos@2/reviews-natalia@2.jpg 2x
+                /img/desktop/reviews-natalia.jpg            1x,
+                /img/desktop-photos@2/reviews-natalia@2.jpg 2x
               "
               src="../img/desktop/reviews-natalia.jpg"
               width="80"
@@ -82,8 +82,8 @@
           <div class="reviews-image">
             <img
               srcset="
-                ../img/desktop/reviews-danilo.jpg            1x,
-                ../img/desktop-photos@2/reviews-danilo@2.jpg 2x
+                /img/desktop/reviews-danilo.jpg            1x,
+                /img/desktop-photos@2/reviews-danilo@2.jpg 2x
               "
               src="../img/desktop/reviews-danilo.jpg"
               width="80"
@@ -101,8 +101,8 @@
           <div class="reviews-image">
             <img
               srcset="
-                ../img/desktop/reviews-irina.jpg            1x,
-                ../img/desktop-photos@2/reviews-irina@2.jpg 2x
+                /img/desktop/reviews-irina.jpg            1x,
+                /img/desktop-photos@2/reviews-irina@2.jpg 2x
               "
               src="../img/desktop/reviews-irina.jpg"
               width="80"
@@ -118,12 +118,17 @@
       </ul>
       <div class="swiper-pagination"></div>
     </div>
-    <button class="reviews-button js-open-modal" data-modal="2" type="button">
+    <button
+      class="reviews-button js-open-modal"
+      data-modal="reviews-modal"
+      type="button"
+    >
       Leave a review
     </button>
   </div>
-  <!-- <div class="modal review-modal" data-modal="2">
-    <button class="modal-close js-modal-close" data-modal="2">
+
+  <div class="modal reviews-modal" data-modal="reviews-modal">
+    <button class="modal-close js-modal-close">
       <svg class="modal-icon">
         <use href="../img/icons.svg#x"></use>
       </svg>
@@ -133,32 +138,49 @@
         Leave a review about<br />
         <span class="reviews-title-brand">our chocolate</span>
       </h2>
-      <label for="user-name"></label>
-      <input
-        class="review-input"
-        type="text"
-        name="user-name"
-        id="user-name"
-        placeholder="Name"
-      />
-      <label for="user-email"></label>
-      <input
-        class="review-input"
-        type="email"
-        name="user-email"
-        id="user-email"
-        placeholder="Email"
-      />
-      <label for="user-phone"></label>
-      <input
-        class="review-input"
-        type="tel"
-        name="user-phone"
-        id="user-phone"
-        placeholder="Phone number"
-      />
-      <textarea name="" id=""></textarea>
+      <div class="reviews-input-container">
+        <label class="visually-hidden" for="user-name">Name</label>
+        <input
+          class="reviews-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="reviews-input-container">
+        <label class="visually-hidden" for="user-email">Email</label>
+        <input
+          class="reviews-input"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="reviews-input-container">
+        <label class="visually-hidden" for="user-phone">Phone number</label>
+        <input
+          class="reviews-input"
+          type="tel"
+          name="user-phone"
+          id="user-phone"
+          placeholder="Phone number"
+          required
+        />
+      </div>
+      <div class="reviews-input-container">
+        <label class="visually-hidden" for="review-text">Enter text</label>
+        <textarea
+          class="reviews-input reviews-textarea"
+          name="review-text"
+          id="review-text"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="reviews-submit" id="submitBtn" type="submit">Send</button>
     </form>
-  </div> -->
-  <div class="overlay js-overlay-modal"></div>
+  </div>
 </section>

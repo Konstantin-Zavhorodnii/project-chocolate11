@@ -6,10 +6,10 @@
 @import url('./base/common.css');
 @import url('./base/reset.css');
 @import url('./base/container.css');
-@import url('./base/base-modal.css');
 
 /* component styles */
 @import url('./component/title.css');
+@import url('./component/modal.css');
 
 /* layout styles */
 @import url('./layout/header.css');
