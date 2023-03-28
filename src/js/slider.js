@@ -47,7 +47,10 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
   },
 
   slidesPerView: 1,
-
+  speed: 1000,
+  longSwipes: false,
+  rewind: true,
+  oneWayMovement:true,
   breakpoints: {
     375: {
       slidesPerView: 1,
