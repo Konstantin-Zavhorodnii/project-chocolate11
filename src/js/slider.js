@@ -59,5 +59,6 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
       slidesPerView: 3,
       spaceBetween: 28,
     },
+    
   },
 });
