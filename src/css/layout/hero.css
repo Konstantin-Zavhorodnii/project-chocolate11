@@ -495,6 +495,8 @@ textarea {
     background-color: var(--text-color-title);
     padding: 12px 28px;
     border: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width:768px) {
@@ -503,7 +505,9 @@ textarea {
     }
 }
 
-.hero-form-btn:focus{
+.hero-form-btn:hover, .hero-form-btn:focus {
+    background-color: var(--bcg-color-hover-orange-btn);
+    color: var(--text-color-title);
     outline: none;
 }
 
