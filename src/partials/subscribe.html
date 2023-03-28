@@ -1,51 +1,53 @@
 <section class="section-subscribe">
-  <div class="container">
-    <h2 class="subscribe-title">
-      EXPLORE OUR NEW <br />
-      CHOCOLATE FIRST
-    </h2>
-    <p class="subscribe-description">
-      From the velvety texture to the rich and complex flavor, our New <br />
-      Chocolate is a true indulgence that will leave you craving more. Made
-      <br />
-      with only the finest ingredients and handcrafted with the utmost <br />
-      care, each piece is a work of art that is sure to please.
-    </p>
-    <button
-      type="button"
-      class="subscribe-btn js-open-modal"
-      data-modal="subscribe-modal"
-    >
-      Subscribe
-    </button>
-  </div>
-
-  <div class="modal subscribe-modal" data-modal="subscribe-modal">
-    <div class="modal-back-img"></div>
-    <button class="modal-close js-modal-close">
-      <svg class="modal__cross">
+    <div class="container">
+      <h2 class="subscribe-title">
+        EXPLORE OUR NEW <br />
+        CHOCOLATE FIRST
+      </h2>
+      <p class="subscribe-description">
+        From the velvety texture to the rich and complex flavor, our New <br />
+        Chocolate is a true indulgence that will leave you craving more. Made
+        <br />
+        with only the finest ingredients and handcrafted with the utmost <br />
+        care, each piece is a work of art that is sure to please.
+      </p>
+      <button type="button" class="subscribe-btn js-open-modal" data-modal="1">
+        Subscribe
+      </button>
+    </div>
+  
+    <div class="modal" data-modal="1">
+      <div class="modal-back-img"></div>
+      <svg
+        class="modal__cross js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
         <use href="../img/icons.svg#x"></use>
       </svg>
-    </button>
-    <form class="form-subscribe">
-      <label class="title" for="email">
-        Explore our<br />
-        <span class="-subscribe-label-text"> new chocolate</span>
-        first!
-      </label>
-      <div class="input-div">
-        <input
-          class="subscribe-input"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          autocomplete="on"
-          required
-        />
-        <button class="subscribe-btn-modal" type="submit">Submit</button>
-      </div>
-    </form>
-  </div>
-  <div class="overlay js-overlay-modal"></div>
-</section>
+      <form class="form-subscribe">
+        <label class="subscribe-label" for="user-emale">
+          Explore our
+  
+          <div>
+            <span class="-subscribe-label-text">new chocolate</span> first!
+          </div>
+  
+          <div class="input-div">
+              <input
+              class="subscribe-input"
+              type="email"
+              name="user-emale"
+              id="user-emale"
+              placeholder="Enter your email"
+              autocomplete="on"
+            />
+            
+            <button class="subscribe-btn-modal" type="submit">Submit</button>
+          </div>
+        </label>
+      </form>
+    </div>
+  
+    <div class="overlay js-overlay-modal"></div>
+  </section>
