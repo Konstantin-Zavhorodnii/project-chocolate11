@@ -133,7 +133,7 @@
         <use href="../img/icons.svg#x"></use>
       </svg>
     </button>
-    <form>
+    <form id="form">
       <h2 class="modal-title title">
         Leave a review about<br />
         <span class="reviews-title-brand">our chocolate</span>
@@ -146,6 +146,7 @@
           name="user-name"
           id="user-name"
           placeholder="Name"
+          minlength="2"
           required
         />
       </div>
@@ -157,6 +158,7 @@
           name="user-email"
           id="user-email"
           placeholder="Email"
+          minlength="7"
           required
         />
       </div>
@@ -168,6 +170,9 @@
           name="user-phone"
           id="user-phone"
           placeholder="Phone number"
+          pattern="^\+[0-9]{12}"
+          title='Номер повинен складатися із 12 цифр, а також починатись із
+        символа "+" та коду країни'
           required
         />
       </div>
@@ -180,7 +185,29 @@
           placeholder="Enter text"
         ></textarea>
       </div>
-      <button class="reviews-submit" id="submitBtn" type="submit">Send</button>
+      <button
+        class="reviews-submit js-pop-up"
+        type="submit"
+        data-modal="reviews-pop-up"
+      >
+        Send
+      </button>
     </form>
+  </div>
+  <div
+    class="reviews-pop-up modal-pop-up modal"
+    data-modal="reviews-pop-up"
+    id="success-modal"
+  >
+    <button class="modal-close pop-up-close js-modal-close">
+      <svg class="pop-up-icon">
+        <use href="../img/icons.svg#x"></use>
+      </svg>
+    </button>
+    <h2 class="title pop-up-title">
+      Thank you<br />
+      for your feedback!
+    </h2>
+    <p>We are so happy to hear from you!</p>
   </div>
 </section>
