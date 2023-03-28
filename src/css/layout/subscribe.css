@@ -183,7 +183,7 @@
     background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x);
   }
 }
-
+/* ================================MODAL============================== */
 .modal.active,
 .overlay.active {
   opacity: 1;
