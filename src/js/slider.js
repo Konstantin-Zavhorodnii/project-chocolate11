@@ -9,6 +9,10 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
   slidesPerView: 4,
+  speed: 1000,
+  longSwipes: false,
+  rewind: true,
+  oneWayMovement:true,
   breakpoints: {
     175: {
       slidesPerView: 1,
@@ -43,7 +47,10 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
   },
 
   slidesPerView: 1,
-
+  speed: 1000,
+  longSwipes: false,
+  rewind: true,
+  oneWayMovement:true,
   breakpoints: {
     375: {
       slidesPerView: 1,
@@ -59,5 +66,6 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
       slidesPerView: 3,
       spaceBetween: 28,
     },
+    
   },
 });
