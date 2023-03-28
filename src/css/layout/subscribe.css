@@ -145,18 +145,6 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
-  .modal-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-    stroke: var(--text-color-black);
-    cursor: pointer;
-  }
 }
 
 /* =================================TABLET======================== */
@@ -233,18 +221,6 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
-  .modal-close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    padding: 0;
-    width: 28px;
-    height: 28px;
-    border: none;
-    background-color: transparent;
-    stroke: var(--text-color-black);
-    cursor: pointer;
-  }
 }
 
 /* =========================DESKTOP======================= */
@@ -320,18 +296,6 @@
     align-items: center;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
-  }
-  .modal-close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    padding: 0;
-    width: 28px;
-    height: 28px;
-    border: none;
-    background-color: transparent;
-    stroke: var(--text-color-black);
-    cursor: pointer;
   }
 }
 /* ============================================MODAL======================================== */
