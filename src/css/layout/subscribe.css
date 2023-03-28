@@ -280,8 +280,12 @@
     border: none;
     transform: translateX(8px);
   }
+<<<<<<< Updated upstream
 =======
 }
+=======
+
+>>>>>>> Stashed changes
 
 .overlay {
   opacity: 0;
@@ -310,6 +314,10 @@
   position: relative;
   }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -341,6 +349,12 @@
   text-transform: uppercase;
   color: black;
 }
+<<<<<<< Updated upstream
+=======
+  
+
+
+>>>>>>> Stashed changes
 .-subscribe-label-text {
   color: #fd9222;
 }
