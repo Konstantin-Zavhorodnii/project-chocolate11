@@ -131,7 +131,7 @@
     background: var(--text-color-title);
     border-radius: 100px;
     border: none;
-    transform: translate(-97px, 24px);
+    transform: translate(50зчpx, 24px);
     transition: background-color 0.3s, color 0.3s;
   }
   .subscribe-input::placeholder {
