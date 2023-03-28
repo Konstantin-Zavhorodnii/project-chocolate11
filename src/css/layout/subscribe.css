@@ -150,20 +150,19 @@
     margin-bottom: 24px;
   }
 
-  
   .-subscribe-label-text {
-    color: #FD9222;
+    color: #fd9222;
   }
-  
+
   .form-subscribe {
     padding: 40px;
   }
-  
+
   .input-div {
     display: flex;
     align-items: end;
   }
-  
+
   .subscribe-input {
     width: 313px;
     height: 52px;
@@ -171,41 +170,39 @@
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
     padding-left: 24px;
-
   }
 }
 
+.subscribe-input:focus {
+  outline: 1px solid var(--text-color-title);
+}
 
-  .subscribe-input:focus {
-    outline: 1px solid var(--text-color-title);
-  }
-  
-  .subscribe-input::placeholder {
-    display: flex;
-    align-items: center;
-    /* padding-left: 24px; */
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
-  }
-  
-  .subscribe-btn-modal {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    text-align: center;
-    width: 137px;
-    height: 52px;
-    background: #FD9222;
-    border-radius: 100px;
-    border: none;
-    transform: translateX(8px);
-  }
+.subscribe-input::placeholder {
+  display: flex;
+  align-items: center;
+  /* padding-left: 24px; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.subscribe-btn-modal {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  text-align: center;
+  width: 137px;
+  height: 52px;
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
+  transform: translateX(8px);
+}
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -232,7 +229,7 @@
   height: 196px;
 
   position: relative;
-  }
+}
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -249,9 +246,9 @@
 }
 
 .modal__cross {
-width: 100%;
+  width: 100%;
   height: 100%;
- 
+
   stroke: #ffffff;
   position: absolute;
   top: 24px;
@@ -259,7 +256,7 @@ width: 100%;
   cursor: pointer;
 }
 
-.subscribe-label{
+.subscribe-label {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 24px;
@@ -267,7 +264,6 @@ width: 100%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: black;
-}
 }
 
 .-subscribe-label-text {
@@ -279,7 +275,6 @@ width: 100%;
   text-align: left;
 
   background-color: var(--bcg-color-white);
-
 }
 
 .input-div {
@@ -298,7 +293,6 @@ width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 30px;
 }
-
 
 .subscribe-input:focus {
   outline: 1px solid var(--text-color-title);
