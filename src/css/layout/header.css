@@ -46,12 +46,16 @@ html {
   align-items: center;
   justify-content: center;
   gap: 4px;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111111;
+}
+
+.header-part-of-logo {
+  font-style: italic;
 }
 
 .header-social-list {
@@ -85,13 +89,17 @@ html {
   align-items: center;
   justify-content: center;
   gap: 4px;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   padding: 24px 0;
   color: #111111;
+}
+
+.header-mobile-part-of-logo {
+  font-style: italic;
 }
 
 .header-button {
@@ -117,7 +125,8 @@ html {
     margin-right: auto;
   }*/
 
-.mobile-menu-container {
+
+.container {
   position: relative;
 }
 
@@ -183,7 +192,7 @@ html {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14px;
+  line-height: 1,14;
   letter-spacing: -0.02em;
   color: #ffffff;
 }
@@ -214,16 +223,45 @@ html {
   }
 }
 
+.mobile-menu-container {
+  position: relative;
+}
+
+@media screen and (max-width: 374px) {
+  
 .mobile-social-list {
   display: flex;
   flex-direction: row;
   gap: 21px;
-}
+  position: fixed;
+  bottom: 21px;
+  left: 21px;
+  
+  
+}}
+
+@media screen and (min-width: 375px) and (max-width: 1199px) {
+    .mobile-social-list {
+      display: flex;
+      flex-direction: row;
+      gap: 21px;
+      position: fixed;
+      bottom: 26px;
+      left: 34px;
+}}
 
 .mobile-social-svg {
   stroke: var(--bcg-color-white);
   fill: transparent;
 }
+
+/*@media screen and (min-width: 375px){
+ .mobile-social-svg {
+  width: 24px;
+  height: 24px;
+
+ } 
+}*/
 
 @media screen and (min-width: 375px) {
   .mobile-social-svg:hover {
