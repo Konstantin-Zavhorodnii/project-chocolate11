@@ -1,10 +1,12 @@
 /* util styles */
 @import url('./util/var.css');
+@import url('./util/hidden.css');
 
 /* base styles */
 @import url('./base/common.css');
 @import url('./base/reset.css');
 @import url('./base/container.css');
+@import url('./base/base-modal.css');
 
 /* component styles */
 @import url('./component/title.css');
