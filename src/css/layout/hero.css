@@ -1,35 +1,131 @@
 .hero {
-    max-width: 1200px;
+    max-width: 375px;
     margin: 0 auto;
     padding-bottom: 72px;
 }
 
+@media screen and (min-width:768px) {
+    .hero {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    }
+
+    
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .hero {
+        max-width: 1200px;
+        padding-bottom: 71px;
+    }
+}
+
 .hero-container {
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/desktop/chocolate-covered-cocoa-powder.jpg);
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/mobile/chocolate-covered-cocoa-powder.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 40px;
 
 }
 
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/mobile@2/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/tablet/chocolate-covered-cocoa-powder-768.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/tablet@2/chocolate-covered-cocoa-powder-768@2x.jpg);
+    }
+}
+}
+
+@media screen and (min-width:1200px) {
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/desktop/chocolate-covered-cocoa-powder.jpg);
+        
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/desktop-photos@2/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+}
+}
+
 .hero-content-container {
-    padding: 381px 40px 40px 40px;
+    padding: 395px 20px 21px 20px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-content-container {
+        padding: 671px 40px 40px 40px;
+}
+}
+
+@media screen and (min-width:1200px) {
+    .hero-content-container {
+        padding: 381px 40px 40px 40px;
+        
+    }
 }
 
 .hero-title {
     font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.21;
     letter-spacing: -0.03em;
     color: var(--text-color-white);
     margin-bottom: 32px;
 }
 
+@media screen and (min-width:768px) {
+    .hero-title {
+        font-size: 28px;
+        max-width: 484px;
+}
+}
+
+@media screen and (min-width:1200px) {
+    .hero-title {
+        font-size: 28px;
+        max-width: 484px;
+        
+    }
+}
+
 .buttons-container {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    column-gap: 14px;
+
 }
+
+@media screen and (min-width:768px) {
+    .buttons-container {
+        gap: 0;
+        column-gap: 0;      
+    }
+}
+
 
 .buy-btn {
     display: block;
@@ -38,16 +134,22 @@
     font-size: 14px;
     line-height: 1.21;
     color: var(--text-color-white);
-    padding: 14px 40px;
+    padding: 12px 28px;
     background-color: var(--text-color-title);
     border-radius: 100px;
     border: none;
-    margin-right: 14px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buy-btn:hover,
-.buy-btn:focus {
+@media screen and (min-width:768px) {
+    .buy-btn {
+        padding: 14px 40px;
+        margin-right: 14px;
+        
+    }
+}
+
+.buy-btn:hover, .buy-btn:focus {
     background-color: #FCF1E0;
     color: var(--text-color-title);
 }
@@ -58,16 +160,23 @@
     font-size: 14px;
     line-height: 1.21;
     color: var(--text-color-white);
-    padding: 14px 40px;
+    padding: 12px 28px;
     border: 1px solid var(--text-color-white);
     border-radius: 100px;
     background-color: transparent;
     margin-right: auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
-.how-made-btn:hover,
-.how-made-btn:focus {
+@media screen and (min-width:1200px) {
+    .how-made-btn {
+        padding: 14px 40px;
+        
+    }
+}
+
+.how-made-btn:hover, .how-made-btn:focus {
     background-color: var(--text-color-white);
     color: var(--text-color-title);
     border: 1px solid var(--text-color-title);
@@ -89,17 +198,18 @@
     background-color: transparent;
     border-radius: 10px;
     padding: 5px 16px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.scroll-btn:hover,
-.scroll-btn:focus .scroll-btn:focus {
+.scroll-btn:hover, .scroll-btn:focus .scroll-btn:focus {
     color: var(--text-color-title);
     background-color: var(--text-color-white);
     cursor: pointer;
+    
+    
 }
 
-.scroll-btn:hover .scroll-svg {
+.scroll-btn:hover .scroll-svg{
     fill: var(--text-color-white);
 }
 
@@ -111,9 +221,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 28px;
+    height: 28px;
 }
 
-
+@media screen and (min-width:1200px) {
+    .scroll-div {
+        width: 38px;
+        height: 38px;
+    }
+}
+    
 .scroll-svg {
     display: block;
     width: 32px;
@@ -148,13 +266,21 @@
 
 .hero-modal {
     position: relative;
-    max-width: 609px;
-    max-height: 1058px;
+    max-width: 311px;
+    max-height: 1007px;
     width: 100%;
     height: 100%;
     background-color: var(--text-color-white);
     overflow: auto;
     border-radius: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-modal {
+        max-width: 609px;
+        max-height: 1058px;
+        
+    }
 }
 
 .hero-close-btn {
@@ -176,19 +302,34 @@
 }
 
 .hero-form {
-    padding: 48px;
+    padding: 32px 24px;
 }
+
+@media screen and (min-width:768px) {
+    .hero-form {
+                padding: 48px;
+    }
+}
+
 
 .hero-form-title {
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 20px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--text-color-title);
     margin-bottom: 32px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-form-title {
+        font-size: 24px;
+        line-height: 1.17;
+        
+    }
 }
 
 .hero-form-span {
@@ -198,30 +339,50 @@
 .hero-label {
     font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: -0.02em;
     color: var(--text-color-black);
     display: block;
     margin-bottom: 8px;
 }
 
+@media screen and (min-width:768px) {
+    .hero-label {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
+
+
 .hero-input {
     font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
     letter-spacing: -0.02em;
     color: var(--text-color-black);
     width: 100%;
-    height: 66px;
-    padding-left: 24px;
+    height: 45px;
+    padding-left: 18px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 13px;
     transition-property: outline;
-    transition-duration: 300ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width:768px) {
+    .hero-input {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: -0.02em;
+        width: 100%;
+        height: 66px;
+        padding-left: 24px;
+    }
 }
 
 .hero-input:valid {
@@ -234,20 +395,32 @@
 
 .hero-half-input {
     font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
     letter-spacing: -0.02em;
     color: var(--text-color-black);
-    width: 50%;
-    height: 66px;
-    padding-left: 24px;
+    width: 100%;
+    height: 45px;
+    padding-left: 18px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 13px;
     transition-property: outline;
-    transition-duration: 300ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width:768px) {
+    .hero-half-input {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: -0.02em;
+        width: 50%;
+        height: 66px;
+        padding-left: 24px;
+    }
 }
 
 .hero-half-input:valid {
@@ -258,24 +431,36 @@
     outline: 1px solid red;
 }
 
-.hero-input::placeholder,
-.hero-half-input::placeholder {
+.hero-input::placeholder, .hero-half-input::placeholder{
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22;
+    font-size: 14px;
+    line-height: 1.21;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
 }
+@media screen and (min-width:768px) {
+    .hero-input::placeholder, .hero-half-input::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
 
-.hero-input:focus,
-.hero-half-input:focus {
+
+.hero-input:focus, .hero-half-input:focus {
     outline: 1px solid var(--text-color-title);
 }
 
 textarea {
     resize: none;
-    padding-top: 22px;
+    padding-top: 14px;
+}
+
+@media screen and (min-width:768px) {
+    textarea {
+        padding-top: 22px;
+    }
 }
 
 .hero-textarea:valid {
@@ -289,8 +474,15 @@ textarea {
 .hero-input-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 21px;
     margin-bottom: 18px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-input-container {
+        flex-direction: row;
+    }
 }
 
 .hero-form-btn {
@@ -301,15 +493,21 @@ textarea {
     color: var(--text-color-white);
     border-radius: 100px;
     background-color: var(--text-color-title);
-    padding: 14px 40px 14px 40px;
+    padding: 12px 28px;
     border: none;
 }
 
-.hero-form-btn:focus {
+@media screen and (min-width:768px) {
+    .hero-form-btn {
+        padding: 14px 40px 14px 40px;
+    }
+}
+
+.hero-form-btn:focus{
     outline: none;
 }
 
-.hero-card-input {
+.hero-card-input{
     position: relative;
     width: 100%;
     display: flex;
@@ -323,16 +521,22 @@ textarea {
 .hero-card-input:invalid {
     outline: 1px solid red;
 }
-
-.hero-card-input:valid~.card-images {
+.hero-card-input:valid ~ .card-images {
     display: none;
 }
 
 .card-images {
     display: flex;
     position: absolute;
-    top: 22px;
-    right: 24px;
+    top: 10px;
+    right: 12px;
+}
+
+@media screen and (min-width:768px) {
+    .card-images {
+        top: 22px;
+        right: 24px;
+    }
 }
 
 .buy-list {
@@ -344,15 +548,14 @@ textarea {
 .buy-card {
     max-width: 160px;
     border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 15px;
+    border-radius: 15px;  
     background-color: var(--text-color-white);
     transition-property: outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buy-card:hover,
-.buy-card:focus {
+.buy-card:hover, .buy-card:focus {
     outline: 1px solid var(--text-color-title);
     cursor: pointer;
 }
@@ -381,12 +584,11 @@ textarea {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buy-card:hover .buy-weight-btn {
+.buy-card:hover  .buy-weight-btn {
     outline: 1px solid var(--text-color-title);
 }
 
-.buy-weight-btn:hover,
-.buy-weight-btn:focus {
+.buy-weight-btn:hover, .buy-weight-btn:focus {
     outline: 1px solid var(--text-color-title);
 }
 
