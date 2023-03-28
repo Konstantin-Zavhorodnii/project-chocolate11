@@ -226,7 +226,7 @@
     text-transform: uppercase;
     color: #111111;
   }
-<<<<<<< Updated upstream
+
   
   .-subscribe-label-text {
     color: #FD9222;
@@ -280,12 +280,6 @@
     border: none;
     transform: translateX(8px);
   }
-<<<<<<< Updated upstream
-=======
-}
-=======
-
->>>>>>> Stashed changes
 
 .overlay {
   opacity: 0;
@@ -314,10 +308,6 @@
   position: relative;
   }
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -349,12 +339,9 @@
   text-transform: uppercase;
   color: black;
 }
-<<<<<<< Updated upstream
-=======
-  
 
 
->>>>>>> Stashed changes
+
 .-subscribe-label-text {
   color: #fd9222;
 }
@@ -409,4 +396,3 @@
   background-color: var(--bcg-color-hover-orange-btn);
   color: var(--text-color-title);
 }
->>>>>>> Stashed changes
