@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButtons = document.querySelectorAll('.js-modal-close'),
     popupButton = document.querySelector('.js-pop-up'),
     form = document.querySelector('#form');
-  modalSuccess = document.querySelector('#success-modal');
+  modalSuccess = document.querySelector('.success-modal');
 
   function clearFormFields() {
     const modalFiends = formModal.querySelectorAll('input');

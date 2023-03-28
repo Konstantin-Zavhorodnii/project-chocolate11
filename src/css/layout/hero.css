@@ -138,7 +138,7 @@
     background-color: var(--text-color-title);
     border-radius: 100px;
     border: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width:768px) {
@@ -165,7 +165,7 @@
     border-radius: 100px;
     background-color: transparent;
     margin-right: auto;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -198,7 +198,7 @@
     background-color: transparent;
     border-radius: 10px;
     padding: 5px 16px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-btn:hover, .scroll-btn:focus .scroll-btn:focus {
@@ -265,7 +265,6 @@
 
 
 .hero-modal {
-    position: relative;
     max-width: 311px;
     max-height: 1007px;
     width: 100%;
@@ -546,11 +545,23 @@ textarea {
 
 .buy-list {
     display: flex;
-    gap: 16px;
 }
 
 @media screen and (min-width:768px) {
     .buy-list {
+        display: none;
+    }
+}
+
+.buy-list-not-mobile {
+    display: none
+
+}
+
+@media screen and (min-width:768px) {
+    .buy-list-not-mobile {
+        display: flex;
+        gap: 16px;
         margin-bottom: 40px;
     }
 }
@@ -563,9 +574,10 @@ textarea {
     max-width: 160px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;  
+    margin: 1px;
     background-color: var(--text-color-white);
     transition-property: outline;
-    transition-duration: 250ms;
+    transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -594,12 +606,12 @@ textarea {
     font-size: 14px;
     line-height: 1.21;
     transition-property: outline;
-    transition-duration: 250ms;
+    transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buy-card:hover  .buy-weight-btn {
-    outline: 1px solid var(--text-color-title);
+    outline: 1.5px solid var(--text-color-title);
 }
 
 .buy-weight-btn:hover, .buy-weight-btn:focus {
@@ -615,11 +627,11 @@ textarea {
     margin-top: 14px;
   }
 
-  /* @media screen and (min-width:768px) {
-    .swiper-pagination, .swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets, .swiper-pagination-horizontal {
+  @media screen and (min-width:768px) {
+    .swiper-pagination, .swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets, .swiper-pagination-horizontal .swiper-initialized .swiper-horizontal .swiper .swiper-initialized .swiper-horizontal .swiper-backface-hidden .swiper-wrapper {
         display: none;
     }
-} */
+}
 
 .swiper-pagination-bullet {
     width: 13px;

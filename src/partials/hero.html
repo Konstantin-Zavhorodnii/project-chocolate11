@@ -10,7 +10,7 @@
         </h2>
 
         <div class="buttons-container">
-          <button type="button" class="buy-btn" data-modal-open>Buy now</button>
+          <button type="button" class="buy-btn js-open-modal" data-modal="hero-modal">Buy now</button>
 
           <a class="how-made-btn" href="#how-its-made">How it’s made</a>
 
@@ -28,9 +28,9 @@
   </div>
 </section>
 
-<div class="hero-backdrop is-hidden" data-modal>
-  <div class="hero-modal">
-    <button class="hero-close-btn" data-modal-close>
+<!-- <div class="hero-backdrop is-hidden" data-modal> -->
+  <div class="hero-modal modal" data-modal="hero-modal">
+    <button class="hero-close-btn js-modal-close">
       <svg class="hero-close-svg" width="14px" height="14px">
         <use href="../img/icons.svg#x"></use>
       </svg>
@@ -77,6 +77,50 @@
                 srcset="
                   ../img/desktop/buy-now-chocolate3.jpg            1x,
                   ../img/desktop-photos@2/buy-now-chocolate3@2.jpg 2x
+                "
+                width="120"
+              />
+              <button class="buy-weight-btn" type="button">300 g</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="buy-list-not-mobile">
+          <li class="buy-card">
+            <div class="buy-card-container">
+              <img
+                src="../img/desktop/buy-now-chocolate1.jpg"
+                alt="dark chocolate"
+                srcset="
+                  ../img/desktop/buy-now-chocolate1.jpg            1x,
+                  ../img/desktop-photos@2/buy-now-chocolate1@2.jpg 2x
+                "
+                width="120"
+              />
+              <button class="buy-weight-btn" type="button">100 g</button>
+            </div>
+          </li>
+          <li class="buy-card">
+            <div class="buy-card-container">
+              <img
+                src="../img/desktop/buy-now-chocolate2.jpg"
+                alt="white chocolate"
+                srcset="
+                  ../img/desktop/buy-now-chocolate2.jpg            1x,
+                  ../img/desktop-photos@2/buy-now-chocolate2@2.jpg 2x
+                "
+                width="120"
+              />
+              <button class="buy-weight-btn" type="button">200 g</button>
+            </div>
+          </li>
+          <li class="buy-card">
+            <div class="buy-card-container">
+              <img
+                src="../img/desktop/buy-now-chocolate3.jpg"
+                alt="milk chocolate"
+                srcset="
+                  /img/desktop/buy-now-chocolate3.jpg            1x,
+                  /img/desktop-photos@2/buy-now-chocolate3@2.jpg 2x
                 "
                 width="120"
               />
@@ -177,7 +221,24 @@
         ></textarea>
       </div>
 
-      <button type="submit" class="hero-form-btn">Submit</button>
+      <button type="submit" class="hero-form-btn js-pop-up" data-modal="reviews-pop-up">Submit</button>
     </form>
   </div>
-</div>
+  <!-- <div
+    class="reviews-pop-up modal-pop-up modal success-modal"
+    data-modal="hero-pop-up"
+    id="success-modal"
+  >
+    <button class="modal-close pop-up-close js-modal-close">
+      <svg class="pop-up-icon">
+        <use href="../img/icons.svg#x"></use>
+      </svg>
+    </button>
+    <h2 class="title pop-up-title">
+      Thank you<br />
+      for your feedback!
+    </h2>
+    <p>We are so happy to hear from you!</p>
+  </div> -->
+  <div class="overlay js-overlay-modal"></div>
+<!-- </div> -->
