@@ -10,9 +10,7 @@ const swiper = new Swiper('.swiper', {
   },
   slidesPerView: 4,
   speed: 1000,
-  longSwipes: false,
-  rewind: true,
-  oneWayMovement:true,
+
   breakpoints: {
     175: {
       slidesPerView: 1,
