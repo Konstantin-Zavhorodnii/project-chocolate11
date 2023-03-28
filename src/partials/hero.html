@@ -39,51 +39,55 @@
       <h3 class="hero-form-title">
         BUY <span class="hero-form-span">NOW</span>
       </h3>
-      <ul class="buy-list">
-        <li class="buy-card">
-          <div class="buy-card-container">
-            <img
-              src="../img/desktop/buy-now-chocolate1.jpg"
-              alt="dark chocolate"
-              srcset="
-                ../img/desktop/buy-now-chocolate1.jpg            1x,
-                ../img/desktop-photos@2/buy-now-chocolate1@2.jpg 2x
-              "
-              width="120"
-            />
-            <button class="buy-weight-btn" type="button">100 g</button>
-          </div>
-        </li>
-        <li class="buy-card">
-          <div class="buy-card-container">
-            <img
-              src="../img/desktop/buy-now-chocolate2.jpg"
-              alt="white chocolate"
-              srcset="
-                ../img/desktop/buy-now-chocolate2.jpg            1x,
-                ../img/desktop-photos@2/buy-now-chocolate2@2.jpg 2x
-              "
-              width="120"
-            />
-            <button class="buy-weight-btn" type="button">200 g</button>
-          </div>
-        </li>
-        <li class="buy-card">
-          <div class="buy-card-container">
-            <img
-              src="../img/desktop/buy-now-chocolate3.jpg"
-              alt="milk chocolate"
-              srcset="
-                ../img/desktop/buy-now-chocolate3.jpg            1x,
-                ../img/desktop-photos@2/buy-now-chocolate3@2.jpg 2x
-              "
-              width="120"
-            />
-            <button class="buy-weight-btn" type="button">300 g</button>
-          </div>
-        </li>
-      </ul>
-
+      <div class="swiper">
+        <ul class="buy-list swiper-wrapper">
+          <li class="buy-card swiper-slide">
+            <div class="buy-card-container">
+              <img
+                src="../img/desktop/buy-now-chocolate1.jpg"
+                alt="dark chocolate"
+                srcset="
+                  ../img/desktop/buy-now-chocolate1.jpg            1x,
+                  ../img/desktop-photos@2/buy-now-chocolate1@2.jpg 2x
+                "
+                width="120"
+              />
+              <button class="buy-weight-btn" type="button">100 g</button>
+            </div>
+          </li>
+          <li class="buy-card swiper-slide">
+            <div class="buy-card-container">
+              <img
+                src="../img/desktop/buy-now-chocolate2.jpg"
+                alt="white chocolate"
+                srcset="
+                  ../img/desktop/buy-now-chocolate2.jpg            1x,
+                  ../img/desktop-photos@2/buy-now-chocolate2@2.jpg 2x
+                "
+                width="120"
+              />
+              <button class="buy-weight-btn" type="button">200 g</button>
+            </div>
+          </li>
+          <li class="buy-card swiper-slide">
+            <div class="buy-card-container">
+              <img
+                src="../img/desktop/buy-now-chocolate3.jpg"
+                alt="milk chocolate"
+                srcset="
+                  ../img/desktop/buy-now-chocolate3.jpg            1x,
+                  ../img/desktop-photos@2/buy-now-chocolate3@2.jpg 2x
+                "
+                width="120"
+              />
+              <button class="buy-weight-btn" type="button">300 g</button>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <span class="buy-modal-margin"></span>
+      </div>
+      
       <label for="Name" class="hero-label"> Personal information </label>
       <div class="hero-input-container">
         <input

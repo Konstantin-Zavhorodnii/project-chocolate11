@@ -345,6 +345,7 @@
     color: var(--text-color-black);
     display: block;
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 @media screen and (min-width:768px) {
@@ -546,8 +547,17 @@ textarea {
 .buy-list {
     display: flex;
     gap: 16px;
-    margin-bottom: 40px;
 }
+
+@media screen and (min-width:768px) {
+    .buy-list {
+        margin-bottom: 40px;
+    }
+}
+
+/* .buy-modal-margin {
+    margin-bottom: 32px;
+} */
 
 .buy-card {
     max-width: 160px;
@@ -599,3 +609,28 @@ textarea {
 .iti {
     width: 100%;
 }
+
+.swiper-pagination {
+    position: unset;
+    margin-top: 14px;
+  }
+
+  /* @media screen and (min-width:768px) {
+    .swiper-pagination, .swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets, .swiper-pagination-horizontal {
+        display: none;
+    }
+} */
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background: rgba(17, 17, 17, 0.553);
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    border-radius: 32px;
+    background: #fd9222;
+  }
+  

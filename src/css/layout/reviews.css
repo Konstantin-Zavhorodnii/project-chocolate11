@@ -136,12 +136,10 @@
   line-height: 1.22;
   letter-spacing: -0.02em;
   background-color: transparent;
-  border: 1px solid rgba(17, 17, 17, 0.05);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 13px;
 }
-
-
 
 .reviews-input-container {
   margin-bottom: 20px;
@@ -174,16 +172,4 @@
 
 .iti {
   display: block;
-}
-
-.reviews-input:focus {
-  outline: 1px solid var(--text-color-title);
-}
-
-.reviews-input:valid {
-  outline: 1px solid #008000;
-}
-
-.reviews-input:invalid {
-  outline: #ff0000;
 }
