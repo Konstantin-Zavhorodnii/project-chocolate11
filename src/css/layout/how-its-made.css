@@ -46,11 +46,8 @@
     font-weight: 600;
     line-height: 1.33;
     color: #111111;
-    text-align: justify;
-    padding-bottom: 28px;
-    padding-left: 32px;
-    padding-top: 32px;
-    letter-spacing: 0.04em;
+    margin-bottom: 28px;
+    max-width: 340px;
 }
 
 .how-its-made-items {
@@ -60,7 +57,7 @@
     color: #111111;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    padding-left: 52px;
+    padding-left: 20px;
 }
 
 
@@ -78,8 +75,16 @@
     width: 100%;
     max-width: 516px;
     padding-right: 40px;
+    padding-top: 32px;
+    padding-left: 32px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .how-its-made-list {
+        max-width: 614px;
+        width: 100%;
+    }
+}
 
 .video-container {
     position: relative;
