@@ -7,6 +7,19 @@
   margin-bottom: 24px;
 }
 
+.subscribe-modal {
+  width: 100%;
+  max-width: 311px;
+  background-color: #fafafa;
+}
+
+.modal-back-img {
+  background-image: url(../img/desktop/subscribe-modal-desk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 169px;
+}
+
 .subscribe-btn {
   font-style: normal;
   font-weight: 600;
@@ -21,6 +34,26 @@
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn-modal {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 14px 22px;
+  line-height: 1.21;
+  color: var(--text-color-white);
+  background: var(--text-color-title);
+  border-radius: 100px;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.subscribe-btn-modal:hover,
+.subscribe-btn-modal:focus {
+  background-color: var(--bcg-color-hover-orange-btn);
+  color: var(--text-color-title);
 }
 
 .subscribe-btn:hover,
@@ -41,6 +74,44 @@
     background-image: url(../../img/desktop/subscribe-desk.jpg);
     background-size: 1200px, 370px;
   }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .section-hero {
+    background-image: url(../../img/desktop-photos@2/subscribe-desk@2.jpg);
+    background-size: 1200px, 370px;
+  }
+}
+
+.form-subscribe {
+  padding: 32px 24px;
+  text-align: left;
+}
+
+.subscribe-input {
+  width: 100%;
+  height: 45px;
+  padding: 14px 18px;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 30px;
+}
+
+.subscribe-input:focus {
+  outline: 1px solid var(--text-color-title);
+}
+
+.subscribe-input::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.input-div {
+  position: relative;
+  width: 100%;
+  margin-top: 38px;
 }
 
 /* =====================MOBILE================================ */
@@ -67,71 +138,6 @@
     margin-right: auto;
     background-position: center;
     padding: 62px 42px 63px 42px;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .section-subscribe {
-      background-image: url(../../img/mobile@2/subcribe-mobile@2x.jpg);
-      background-size: 375px, 370px;
-    }
-  }
-
-  .subscribe-modal {
-    width: 100%;
-    max-width: 311px;
-    background-color: #fafafa;
-  }
-
-  .form-subscribe {
-    padding: 24px;
-    text-align: left;
-  }
-
-  .subscribe-input {
-    width: 100%;
-    height: 45px;
-    padding: 15px 24px;
-    margin-top: 24px;
-    font-size: 14px;
-    line-height: 1.22;
-    letter-spacing: -0.02em;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    border-radius: 30px;
-  }
-
-  .input-div {
-    position: relative;
-    width: 100%;
-    max-width: 311px;
-    margin-top: 24px;
-  }
-
-  .subscribe-btn-modal {
-    position: absolute;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 14px 22px;
-    line-height: 1.21;
-    color: var(--text-color-white);
-    background: var(--text-color-title);
-    border-radius: 100px;
-    border: none;
-    transform: translate(50зчpx, 24px);
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  .subscribe-input::placeholder {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.22;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
   }
 }
 
@@ -162,8 +168,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .section-subscribe {
       background-image: url(../../img/tablet@2/subcribe-tablet@2x.jpg);
       background-size: 768px, 370px;
@@ -172,13 +178,13 @@
 
   .form-subscribe {
     padding: 40px;
-    text-align: left;
   }
 
   .input-div {
     display: flex;
-    align-items: center;
+    gap: 8px;
     margin-top: 28px;
+    max-width: 100%;
   }
 
   .subscribe-input {
@@ -186,41 +192,28 @@
     height: 52px;
     padding: 15px 24px;
     font-size: 18px;
-    line-height: 1.22;
     letter-spacing: -0.02em;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    border-radius: 30px;
+  }
+  .subscribe-input::placeholder {
+    font-size: 18px;
+    color: rgba(64, 64, 64, 0.3);
   }
 
   .subscribe-modal {
+    max-width: 538px;
     height: 412px;
     background-color: #fafafa;
   }
 
-  .subscribe-btn-modal {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    color: var(--text-color-white);
-    text-align: center;
-    padding: 16px 42px;
-    background: var(--text-color-title);
-    border-radius: 100px;
-    border: none;
-    transform: translateX(8px);
-    transition: background-color 0.3s, color 0.3s;
+  .modal-back-img {
+    height: 196px;
   }
 
-  .subscribe-input::placeholder {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
+  .subscribe-btn-modal {
+    position: unset;
+    display: block;
+    height: 52px;
+    padding: 16px 42px;
   }
 }
 
@@ -239,8 +232,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .section-subscribe {
       background-image: url(../img/desktop-photos@2/subscribe-desk@2.jpg);
       background-size: 1200px, 370px;
@@ -258,166 +251,53 @@
     margin-bottom: 24px;
   }
 
-  .form-subscribe {
-    padding: 40px;
-    text-align: left;
-  }
-
-  .input-div {
-    display: flex;
-    align-items: center;
-    margin-top: 28px;
-  }
-
-  .subscribe-input {
-    width: 313px;
-    height: 52px;
-    padding: 15px 24px;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: -0.02em;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    border-radius: 30px;
-  }
-
   .subscribe-modal {
     height: 412px;
     background-color: #fafafa;
   }
 
-  .subscribe-btn-modal {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    color: var(--text-color-white);
-    text-align: center;
-    padding: 16px 42px;
-    background: var(--text-color-title);
-    border-radius: 100px;
-    border: none;
-    transform: translateX(8px);
-    transition: background-color 0.3s, color 0.3s;
+  /* ============================================MODAL======================================== */
+
+  .overlay {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    transition: 0.3s all;
   }
 
-  .subscribe-input::placeholder {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x);
+    }
   }
-}
 
-/* ============================================MODAL======================================== */
-
-.overlay {
-  opacity: 0;
-  visibility: hidden;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
-  transition: 0.3s all;
-}
-
-.modal-back-img {
-  background-image: url(../img/desktop/subscribe-modal-desk.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 196px;
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .section-hero {
-    background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x);
+  .modal.active,
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
   }
-}
 
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
+  .modal__cross {
+    width: 100%;
+    height: 100%;
+    stroke: #ffffff;
+  }
 
-.modal__cross {
-  width: 100%;
-  height: 100%;
-  stroke: #ffffff;
-}
+  .-subscribe-label-text {
+    color: #fd9222;
+  }
 
-.-subscribe-label-text {
-  color: #fd9222;
-}
-
-.form-subscribe {
-  padding: 40px;
-  text-align: left;
-}
-
-.input-div {
-  display: flex;
-  margin-top: 28px;
-  gap: 8px;
-}
-
-.subscribe-input {
-  width: 313px;
-  height: 52px;
-  padding: 15px 24px;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: -0.02em;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 30px;
-}
-
-.subscribe-input::placeholder {
-  color: rgba(64, 64, 64, 0.3);
-}
-
-.subscribe-btn-modal {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--text-color-white);
-  text-align: center;
-  width: 137px;
-  height: 52px;
-  background: var(--text-color-title);
-  border-radius: 100px;
-  border: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.subscribe-btn-modal:hover,
-.subscribe-btn-modal:focus {
-  background-color: var(--bcg-color-hover-orange-btn);
-  color: var(--text-color-title);
-}
-
-.modal-subscribe-svg {
-  width: 28px;
-  height: 28px;
-}
-
-.subscribe-input:focus {
-  outline: 1px solid var(--text-color-title);
-}
-
-.subscribe-input:valid {
-  outline: 1px solid #008000;
-}
-
-.subscribe-input:invalid {
-  outline: #ff0000;
+  .modal-subscribe-svg {
+    width: 28px;
+    height: 28px;
+  }
 }
