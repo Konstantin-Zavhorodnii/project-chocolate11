@@ -28,45 +28,7 @@
   background-color: #fcf1e0;
   color: #fd9222;
 }
-@media screen and (min-width: 1200px) {
-  .section-hero {
-    background-image: url(../../img/desktop/subscribe-desk.jpg);
-    background-size: 1200px, 370px;
-  }
-}
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .section-hero {
-    background-image: url(../../img/desktop-photos@2/subscribe-desk@2.jpg);
-    background-size: 1200px, 370px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-hero {
-    background-image: url(../../img/tablet/subcribe-tablet.jpg);
-    background-size: 768px, 370px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .section-hero {
-    background-image: url(../../img/tablet@2/subcribe-tablet@2x.jpg);
-    background-size: 768px, 370px;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .section-hero {
-    background-image: url(../../img/mobile@2/subcribe-mobile@2x.jpg);
-    background-size: 375px, 370px;
-  }
-}
 
 /* =====================MOBILE================================ */
 @media screen and (max-width: 767px) {
@@ -93,15 +55,26 @@
     background-position: center;
     padding: 62px 42px 63px 42px;
   }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .section-subscribe {
+      background-image: url(../../img/mobile@2/subcribe-mobile@2x.jpg);
+    }
+  }
+
   .subscribe-modal {
     width: 100%;
     max-width: 311px;
     background-color: #fafafa;
   }
+
   .form-subscribe {
     padding: 24px;
     text-align: left;
   }
+
   .subscribe-input {
     width: 100%;
     height: 45px;
@@ -113,12 +86,14 @@
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
   }
+
   .input-div {
     position: relative;
     width: 100%;
     max-width: 311px;
     margin-top: 24px;
   }
+
   .subscribe-btn-modal {
     position: absolute;
     font-weight: 600;
@@ -132,6 +107,7 @@
     transform: translate(-97px, 24px);
     transition: background-color 0.3s, color 0.3s;
   }
+
   .subscribe-input::placeholder {
     display: flex;
     align-items: center;
@@ -143,6 +119,7 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
+
   .modal-close {
     position: absolute;
     top: 15px;
@@ -182,6 +159,15 @@
     background-position: center;
     padding: 72px 195px;
   }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .section-subscribe {
+      background-image: url(../../img/tablet@2/subcribe-tablet@2x.jpg);
+    }
+  }
+
   .form-subscribe {
     padding: 40px;
     text-align: left;
@@ -203,10 +189,12 @@
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
   }
+
   .subscribe-modal {
     height: 412px;
     background-color: #fafafa;
   }
+
   .subscribe-btn-modal {
     font-weight: 600;
     font-size: 14px;
@@ -220,6 +208,7 @@
     transform: translateX(8px);
     transition: background-color 0.3s, color 0.3s;
   }
+
   .subscribe-input::placeholder {
     display: flex;
     align-items: center;
@@ -231,6 +220,7 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
+
   .modal-close {
     position: absolute;
     top: 24px;
@@ -257,6 +247,14 @@
     margin-right: auto;
     background-position: center;
     padding: 72px 0;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .section-subscribe {
+      background-image: url(../../img/desktop-photos@2/subscribe-desk@2.jpg);
+    }
   }
 
   .subscribe-title {
@@ -291,10 +289,12 @@
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
   }
+
   .subscribe-modal {
     height: 412px;
     background-color: #fafafa;
   }
+
   .subscribe-btn-modal {
     font-weight: 600;
     font-size: 14px;
@@ -308,6 +308,7 @@
     transform: translateX(8px);
     transition: background-color 0.3s, color 0.3s;
   }
+
   .subscribe-input::placeholder {
     display: flex;
     align-items: center;
@@ -319,6 +320,7 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
+
   .modal-close {
     position: absolute;
     top: 24px;
@@ -332,6 +334,7 @@
     cursor: pointer;
   }
 }
+
 /* ============================================MODAL======================================================== */
 .overlay {
   opacity: 0;
@@ -355,10 +358,10 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .section-hero {
-    background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x);
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .modal-back-img {
+    background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x.jpg);
   }
 }
 
