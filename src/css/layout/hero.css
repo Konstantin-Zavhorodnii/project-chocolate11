@@ -138,7 +138,7 @@
     background-color: var(--text-color-title);
     border-radius: 100px;
     border: none;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width:768px) {
@@ -165,7 +165,7 @@
     border-radius: 100px;
     background-color: transparent;
     margin-right: auto;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -198,7 +198,7 @@
     background-color: transparent;
     border-radius: 10px;
     padding: 5px 16px;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-btn:hover, .scroll-btn:focus .scroll-btn:focus {
@@ -284,8 +284,8 @@
 
 .hero-close-btn {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 14px;
+    right: 14px;
     background-color: transparent;
     border-radius: 50%;
     border: none;
@@ -294,10 +294,25 @@
     height: 38px;
 }
 
+@media screen and (min-width:768px) {
+    .hero-close-btn {
+        top: 24px;
+        right: 24px;
+    }
+}
+
 .hero-close-svg {
     stroke: var(--text-color-black);
-    width: 14px;
-    height: 14px;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-close-svg {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .hero-form {
@@ -495,8 +510,7 @@ textarea {
     background-color: var(--text-color-title);
     padding: 12px 28px;
     border: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width:768px) {
@@ -577,7 +591,7 @@ textarea {
     margin: 1px;
     background-color: var(--text-color-white);
     transition-property: outline;
-    transition-duration: 300ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -606,7 +620,7 @@ textarea {
     font-size: 14px;
     line-height: 1.21;
     transition-property: outline;
-    transition-duration: 300ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

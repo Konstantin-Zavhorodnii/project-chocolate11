@@ -31,7 +31,7 @@
 <!-- <div class="hero-backdrop is-hidden" data-modal> -->
   <div class="hero-modal modal" data-modal="hero-modal">
     <button class="hero-close-btn js-modal-close">
-      <svg class="hero-close-svg" width="14px" height="14px">
+      <svg class="hero-close-svg">
         <use href="../img/icons.svg#x"></use>
       </svg>
     </button>
@@ -172,8 +172,10 @@
           id="phone"
           name="phone"
           placeholder="Phone number"
-          pattern="[0-9]{10}"
+          pattern="^\+[0-9]{12}"
           required
+          title='Номер повинен складатися із 12 цифр, а також починатись із
+        символа "+" та коду країни'
         />
       </div>
 
@@ -188,6 +190,7 @@
             minlength="1"
             pattern="[0-9]{16}"
             required
+            title='Номер банківської картки повинен складатися з 16 цифр'
           />
           <div class="card-images">
             <!-- <svg class="card-svg"  height="20px">
