@@ -1,5 +1,5 @@
 
-import './js/slider';
-import './js/mobile-modal';
-import './js/hero-modal';
-import './js/modal';
+import './js/slider.js';
+import './js/mobile-modal.js';
+import './js/hero-modal,js';
+import './js/modal.js';
