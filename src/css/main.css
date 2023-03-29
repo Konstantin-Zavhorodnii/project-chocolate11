@@ -9,6 +9,7 @@
 
 /* component styles */
 @import url('./component/title.css');
+@import url('./component/modal.css');
 
 /* layout styles */
 @import url('./layout/header.css');

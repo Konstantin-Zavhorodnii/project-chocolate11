@@ -1,3 +1,4 @@
+
 /*body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -105,11 +106,12 @@
 }
 
 .footer-social-item {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
 .footer-svg {
+  display: block;
   stroke: var(--bcg-color-white);
   fill: transparent;
 }
@@ -184,12 +186,22 @@
   }
 
   .footer-social-list {
-    gap: 18px;
+    gap: 19px;
   }
 
   .footer-bottom-list {
     flex-direction: row;
     gap: 24px;
+  }
+
+  .footer-social-item {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-svg {
+    width: 24px;
+    height: 24px;
   }
 
   .footer-bottom::before {
