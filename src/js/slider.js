@@ -14,21 +14,25 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     175: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
       spaceBetween: 10,
     },
 
     375: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
       spaceBetween: 18,
     },
 
     768: {
       slidesPerView: 2.5,
+      slidesPerGroup: 2,
       spaceBetween: 18,
     },
 
     1200: {
       slidesPerView: 4,
+      slidesPerGroup: 4,
       spaceBetween: 18,
     },
   },
