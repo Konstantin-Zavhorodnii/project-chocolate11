@@ -30,7 +30,6 @@ html {
   }
 }
 
-
 @media (min-width: 1200px) {
   .header-container {
     display: flex;
@@ -131,6 +130,7 @@ html {
   justify-content: center;
   background: transparent;
   border: none;
+  padding: 0;
 }
 
 .burger-menu {
@@ -205,7 +205,7 @@ html {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,14;
+  line-height: 1, 14;
   letter-spacing: -0.02em;
   color: #ffffff;
 }
@@ -240,31 +240,31 @@ html {
 }
 
 @media screen and (max-width: 374px) {
-  
-.mobile-social-list {
-  display: flex;
-  flex-direction: row;
-  gap: 21px;
-  position: fixed;
-  bottom: 21px;
-  left: 21px;
-}}
+  .mobile-social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    position: fixed;
+    bottom: 21px;
+    left: 21px;
+  }
+}
 
 @media screen and (min-width: 375px) and (max-width: 1199px) {
-    .mobile-social-list {
-      display: flex;
-      flex-direction: row;
-      gap: 21px;
-      position: fixed;
-      bottom: 26px;
-      left: 34px;
-}}
+  .mobile-social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    position: fixed;
+    bottom: 26px;
+    left: 34px;
+  }
+}
 
 .mobile-social-svg {
   stroke: var(--bcg-color-white);
   fill: transparent;
 }
-
 
 @media screen and (min-width: 375px) {
   .mobile-social-svg:hover {
