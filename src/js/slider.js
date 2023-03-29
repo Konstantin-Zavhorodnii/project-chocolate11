@@ -14,25 +14,21 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     175: {
       slidesPerView: 1,
-      slidesPerGroup: 1,
       spaceBetween: 10,
     },
 
     375: {
       slidesPerView: 1,
-      slidesPerGroup: 1,
       spaceBetween: 18,
     },
 
     768: {
       slidesPerView: 2.5,
-      slidesPerGroup: 2,
       spaceBetween: 18,
     },
 
     1200: {
       slidesPerView: 4,
-      slidesPerGroup: 4,
       spaceBetween: 18,
     },
   },
@@ -59,19 +55,16 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
   breakpoints: {
     375: {
       slidesPerView: 1,
-      slidesPerGroup: 1,
       spaceBetween: 16,
     },
 
     768: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
       spaceBetween: 16,
     },
 
     1200: {
       slidesPerView: 3,
-      slidesPerGroup: 3,
       spaceBetween: 28,
     },
     
