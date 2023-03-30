@@ -257,3 +257,9 @@
 .iti--allow-dropdown input[type='tel'] {
   padding-left: 66px;
 }
+.pop-up-icon {
+  width: 22px;
+  height: 22px;
+  fill: #fd9222;
+  stroke: #fd9222;
+}
