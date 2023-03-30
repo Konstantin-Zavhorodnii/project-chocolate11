@@ -20,11 +20,9 @@
 }
 
 .hero-container {
-  background: linear-gradient(
-      180deg,
+  background-image: linear-gradient(180deg,
       rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4) 100%
-    ),
+      rgba(17, 17, 17, 0.4) 100%),
     url(/img/mobile/chocolate-covered-cocoa-powder.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,37 +30,31 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero-container {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
+        rgba(17, 17, 17, 0.4) 100%),
       url(/img/mobile@2/chocolate-covered-cocoa-powder@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-container {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
+        rgba(17, 17, 17, 0.4) 100%),
       url(/img/tablet/chocolate-covered-cocoa-powder-768.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero-container {
-      background-image: linear-gradient(
-          180deg,
+      background-image: linear-gradient(180deg,
           rgba(17, 17, 17, 0) 0%,
-          rgba(17, 17, 17, 0.4) 100%
-        ),
+          rgba(17, 17, 17, 0.4) 100%),
         url(/img/tablet@2/chocolate-covered-cocoa-powder-768@2x.jpg);
     }
   }
@@ -70,23 +62,19 @@
 
 @media screen and (min-width: 1200px) {
   .hero-container {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
+        rgba(17, 17, 17, 0.4) 100%),
       url(/img/desktop/chocolate-covered-cocoa-powder.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero-container {
-      background-image: linear-gradient(
-          180deg,
+      background-image: linear-gradient(180deg,
           rgba(17, 17, 17, 0) 0%,
-          rgba(17, 17, 17, 0.4) 100%
-        ),
+          rgba(17, 17, 17, 0.4) 100%),
         url(/img/desktop-photos@2/chocolate-covered-cocoa-powder@2x.jpg);
     }
   }
@@ -455,6 +443,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .hero-input::placeholder,
   .hero-half-input::placeholder {
     font-weight: 400;
@@ -543,7 +532,7 @@ textarea {
   outline: 1px solid red;
 }
 
-.hero-card-input:valid ~ .card-images {
+.hero-card-input:valid~.card-images {
   display: none;
 }
 
@@ -593,11 +582,23 @@ textarea {
 }
 
 .buy-card-container {
-  padding: 24px 20px 18px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 231px;
+  height: 257px;
+  background: #FFFFFF;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 24px 20px 18px 20px;
+}
+
+@media screen and (min-width:768px) {
+  .buy-card-container {
+    width: 160px;
+    height: 196px;
+  }
 }
 
 .buy-weight-btn {
@@ -639,6 +640,11 @@ textarea {
     }
 } */
 
+.swiper-pagination {
+  position: unset;
+  margin-bottom: 40px;
+}
+
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -652,6 +658,8 @@ textarea {
   background: #fd9222;
 }
 
-.swiper-slide-next {
-  display: none;
+@media screen and (min-width:768px) {
+  .hero-swiper-list {
+    margin-bottom: 40px;
+  }
 }
