@@ -10,7 +10,13 @@
         </h2>
 
         <div class="buttons-container">
-          <button type="button" class="buy-btn" data-modal-open>Buy now</button>
+          <button
+            type="button"
+            class="buy-btn js-open-modal"
+            data-modal="buy-now-modal"
+          >
+            Buy now
+          </button>
 
           <a class="how-made-btn" href="#how-its-made">How it’s made</a>
 
@@ -26,12 +32,9 @@
       </div>
     </div>
   </div>
-</section>
-
-<div class="hero-backdrop is-hidden" data-modal>
-  <div class="hero-modal">
-    <button class="hero-close-btn" data-modal-close>
-      <svg class="hero-close-svg" width="14px" height="14px">
+  <div class="modal hero-modal" data-modal="buy-now-modal">
+    <button class="modal-close js-modal-close">
+      <svg class="modal-icon">
         <use href="/img/icons.svg#x"></use>
       </svg>
     </button>
@@ -139,11 +142,27 @@
           title="xxx-xxx-xx-xx"
           required
         />
-        <svg width="24" height="19" fill="none" class="ukraine-flag-svg"
-                xmlns="http://www.w3.org/2000/svg"><g 
-                clip-path="url(#a)"><path d="M23.874.294H.182v17.631h23.692V.294Z" 
-                fill="gold"/>  <path fill-rule="evenodd" clip-rule="evenodd" d="M.182.294h23.692V9.11H.182V.294Z" fill="#0057B7"/>
-                  </g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .1)" d="M0 0h24v18H0z"/></clipPath></defs>
+        <svg
+          width="24"
+          height="19"
+          fill="none"
+          class="ukraine-flag-svg"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#a)">
+            <path d="M23.874.294H.182v17.631h23.692V.294Z" fill="gold" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M.182.294h23.692V9.11H.182V.294Z"
+              fill="#0057B7"
+            />
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" transform="translate(0 .1)" d="M0 0h24v18H0z" />
+            </clipPath>
+          </defs>
         </svg>
       </div>
 
@@ -157,19 +176,11 @@
             placeholder="Card number"
             minlength="1"
             pattern="[0-9]{16}"
-            title='Номер картки повинен складатися із 16 цифр'
+            title="Номер картки повинен складатися із 16 цифр"
             required
           />
-          
-          
+
           <div class="card-images">
-            <!-- <svg class="card-svg"  height="20px">
-                <use href="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"> </use>
-              </svg>
-              <svg class="card=svg"  height="20px">
-                <use href="https://bin.bnbstatic.com/static/images/fiat/card/mastercard.svg"> </use>
-              </svg> -->
-              
             <img
               src="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"
               alt="visa"
@@ -197,7 +208,27 @@
         ></textarea>
       </div>
 
-      <button type="submit" class="hero-form-btn">Submit</button>
+      <button
+        type="submit"
+        class="hero-form-btn js-modal-close js-open-modal"
+        data-modal="buy-now-pop-up"
+      >
+        Submit
+      </button>
     </form>
   </div>
-</div>
+
+  <div class="buy-now-pop-up modal-pop-up modal" data-modal="buy-now-pop-up">
+    <button class="modal-close pop-up-close js-modal-close">
+      <svg class="pop-up-icon">
+        <use href="/img/icons.svg#x"></use>
+      </svg>
+    </button>
+    <h2 class="title pop-up-title">Thank you!</h2>
+    <p>
+      We are glad that you ordered our chocolate and we are giving you a
+      <span class="buy-now-discount">20%</span>
+      discount on all our products.
+    </p>
+  </div>
+</section>

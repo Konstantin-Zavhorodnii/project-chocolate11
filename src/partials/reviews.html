@@ -140,7 +140,7 @@
         <use href="/img/icons.svg#x"></use>
       </svg>
     </button>
-    <form class="form">
+    <form>
       <h2 class="modal-title title">
         <span class="review-line-break">Leave a review</span> about
         <span class="reviews-title-brand">our chocolate</span>
@@ -193,7 +193,7 @@
         ></textarea>
       </div>
       <button
-        class="reviews-submit js-pop-up"
+        class="reviews-submit js-modal-close js-open-modal"
         type="submit"
         data-modal="reviews-pop-up"
       >
@@ -201,11 +201,7 @@
       </button>
     </form>
   </div>
-  <div
-    class="reviews-pop-up modal-pop-up modal success-modal"
-    data-modal="reviews-pop-up"
-    id="success-modal"
-  >
+  <div class="reviews-pop-up modal-pop-up modal" data-modal="reviews-pop-up">
     <button class="modal-close pop-up-close js-modal-close">
       <svg class="pop-up-icon">
         <use href="/img/icons.svg#x"></use>

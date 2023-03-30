@@ -114,14 +114,18 @@
 
 .reviews-modal {
   width: 100%;
+  height: 100%;
   max-width: 311px;
+  max-height: 478px;
   padding: 32px 24px;
   background-color: var(--bcg-color-modal);
+  overflow: auto;
 }
 
 @media (min-width: 768px) {
   .reviews-modal {
     max-width: 517px;
+    max-height: 642px;
     padding: 40px;
   }
 }

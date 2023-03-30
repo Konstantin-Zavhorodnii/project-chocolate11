@@ -64,9 +64,12 @@
   }
 
   .subscribe-modal {
+    height: 100%;
     width: 100%;
     max-width: 311px;
+    max-height: 390px;
     background-color: #fafafa;
+    overflow: auto;
   }
 
   .form-subscribe {
@@ -177,8 +180,12 @@
   }
 
   .subscribe-modal {
-    height: 412px;
+    height: 100%;
+    width: 100%;
+    max-width: 538px;
+    max-height: 412px;
     background-color: #fafafa;
+    overflow: auto;
   }
 
   .subscribe-btn-modal {
@@ -261,11 +268,6 @@
     letter-spacing: -0.02em;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
-  }
-
-  .subscribe-modal {
-    height: 412px;
-    background-color: #fafafa;
   }
 
   .subscribe-btn-modal {
