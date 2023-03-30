@@ -140,3 +140,10 @@
     display: none;
   }
 }
+
+.modal-by-now {
+  z-index: 500;
+}
+.mide {
+  padding: 50px;
+}
