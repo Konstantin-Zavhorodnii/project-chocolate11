@@ -281,13 +281,12 @@
 }
 
 .hero-modal {
-  position: relative;
   max-width: 311px;
-  max-height: 1007px;
+  max-height: 471px;
   width: 100%;
   height: 100%;
   background-color: var(--text-color-white);
-  overflow: scroll;
+  overflow-y: scroll;
   border-radius: 15px;
 }
 
@@ -381,7 +380,7 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 13px;
-  transition-property: outline;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -398,14 +397,6 @@
   }
 }
 
-.hero-input:valid {
-  outline: 1px solid green;
-}
-
-.hero-input:invalid {
-  outline: 1px solid red;
-}
-
 .hero-half-input {
   font-family: 'Montserrat';
   font-weight: 400;
@@ -419,7 +410,7 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 13px;
-  transition-property: outline;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -434,14 +425,6 @@
     height: 66px;
     padding-left: 24px;
   }
-}
-
-.hero-half-input:valid {
-  outline: 1px solid green;
-}
-
-.hero-half-input:invalid {
-  outline: 1px solid red;
 }
 
 .hero-input::placeholder,
@@ -465,7 +448,8 @@
 
 .hero-input:focus,
 .hero-half-input:focus {
-  outline: 1px solid var(--text-color-title);
+  outline: none;
+  border: 1px solid var(--text-color-title);
 }
 
 textarea {
@@ -477,14 +461,6 @@ textarea {
   textarea {
     padding-top: 22px;
   }
-}
-
-.hero-textarea:valid {
-  outline: 1px solid green;
-}
-
-.hero-textarea:invalid {
-  outline: 1px solid red;
 }
 
 .hero-input-container {
@@ -690,4 +666,24 @@ textarea {
 
 .hero-phone-input {
   padding-left: 56px;
+}
+
+.buy-now-pop-up {
+  padding: 84px 24px 170px 68px;
+}
+
+@media (min-width: 768px) {
+  .buy-now-pop-up {
+    padding: 154px 44px 154px 163px;
+  }
+}
+
+.buy-now-discount {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .buy-now-discount {
+    font-size: 24px;
+  }
 }
