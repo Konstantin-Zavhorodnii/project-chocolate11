@@ -493,6 +493,7 @@ textarea {
   flex-direction: column;
   gap: 21px;
   margin-bottom: 18px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -505,7 +506,7 @@ textarea {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   color: var(--text-color-white);
   border-radius: 100px;
   background-color: var(--text-color-title);
@@ -593,11 +594,23 @@ textarea {
 }
 
 .buy-card-container {
-  padding: 24px 20px 18px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 231px;
+  height: 257px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 24px 20px 18px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .buy-card-container {
+    width: 160px;
+    height: 196px;
+  }
 }
 
 .buy-weight-btn {
@@ -639,6 +652,11 @@ textarea {
     }
 } */
 
+.swiper-pagination {
+  position: unset;
+  margin-bottom: 40px;
+}
+
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -652,6 +670,24 @@ textarea {
   background: #fd9222;
 }
 
-.swiper-slide-next {
-  display: none;
+@media screen and (min-width: 768px) {
+  .hero-swiper-list {
+    margin-bottom: 40px;
+  }
+}
+
+.ukraine-flag-svg {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .ukraine-flag-svg {
+    top: 24px;
+  }
+}
+
+.hero-phone-input {
+  padding-left: 56px;
 }

@@ -31,6 +31,7 @@
                 /img/desktop/reviews-nazar.jpg            1x,
                 /img/desktop-photos@2/reviews-nazar@2.jpg 2x
               "
+
               src="../img/desktop/reviews-nazar.jpg"
               loading="lazy"
               width="80"
@@ -136,12 +137,12 @@
   <div class="modal reviews-modal" data-modal="reviews-modal">
     <button class="modal-close js-modal-close">
       <svg class="modal-icon">
-        <use href="../img/icons.svg#x"></use>
+        <use href="/img/icons.svg#x"></use>
       </svg>
     </button>
     <form class="form">
       <h2 class="modal-title title">
-        Leave a review about<br />
+        <span class="review-line-break">Leave a review</span> about
         <span class="reviews-title-brand">our chocolate</span>
       </h2>
       <div class="reviews-input-container">
@@ -163,7 +164,7 @@
           type="email"
           name="user-email"
           id="user-email"
-          placeholder="Email"
+          placeholder="Enter your email"
           minlength="7"
           required
         />
@@ -214,6 +215,8 @@
       Thank you<br />
       for your feedback!
     </h2>
-    <p>We are so happy to hear from you!</p>
+    <p>
+      <span class="review-line-break">We are so happy to hear</span> from you!
+    </p>
   </div>
 </section>

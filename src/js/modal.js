@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close'),
     popupButton = document.querySelectorAll('.js-pop-up'),
-    form = document.querySelectorAll('.form');
-  modalSuccess = document.querySelector('.success-modal');
+    form = document.querySelectorAll('.form'),
+    modalSuccess = document.querySelector('.success-modal');
 
   function clearFormFields() {
     const modalFiends = form.querySelectorAll('input');

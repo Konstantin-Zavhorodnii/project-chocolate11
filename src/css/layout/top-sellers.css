@@ -140,3 +140,15 @@
     display: none;
   }
 }
+
+.modal-by-now {
+  padding: 154px 44px 154px 163px;
+  z-index: 500;
+}
+.mide {
+  padding: 50px;
+}
+
+.modal-buy-chocolate {
+  height: 600px;
+}

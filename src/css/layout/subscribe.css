@@ -29,7 +29,6 @@
   color: #fd9222;
 }
 
-
 /* =====================MOBILE================================ */
 @media screen and (max-width: 767px) {
   .subscribe-title {
@@ -47,7 +46,7 @@
     text-align: center;
     color: var(--text-color-white);
     background-repeat: no-repeat;
-    background-image: url(../../img/mobile/subcribe-mobile.jpg);
+    background-image: url(/img/mobile/subcribe-mobile.jpg);
     background-size: cover;
     max-width: 767px;
     margin-left: auto;
@@ -57,10 +56,10 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .section-subscribe {
-      background-image: url(../../img/mobile@2/subcribe-mobile@2x.jpg);
+      background-image: url(/img/mobile@2/subcribe-mobile@2x.jpg);
     }
   }
 
@@ -119,19 +118,6 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
-
-  .modal-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-    stroke: var(--text-color-black);
-    cursor: pointer;
-  }
 }
 
 /* =================================TABLET======================== */
@@ -151,7 +137,7 @@
     text-align: center;
     color: var(--text-color-white);
     background-repeat: no-repeat;
-    background-image: url(../../img/tablet/subcribe-tablet.jpg);
+    background-image: url(/img/tablet/subcribe-tablet.jpg);
     background-size: cover;
     max-width: 767px;
     margin-left: auto;
@@ -161,10 +147,10 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .section-subscribe {
-      background-image: url(../../img/tablet@2/subcribe-tablet@2x.jpg);
+      background-image: url(/img/tablet@2/subcribe-tablet@2x.jpg);
     }
   }
 
@@ -220,26 +206,13 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
-
-  .modal-close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    padding: 0;
-    width: 28px;
-    height: 28px;
-    border: none;
-    background-color: transparent;
-    stroke: var(--text-color-black);
-    cursor: pointer;
-  }
 }
 
 /* =========================DESKTOP======================= */
 @media screen and (min-width: 1200px) {
   .section-subscribe {
     text-align: center;
-    background-image: url(../../img/desktop/subscribe-desk.jpg);
+    background-image: url(/img/desktop/subscribe-desk.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1400px;
@@ -250,10 +223,10 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .section-subscribe {
-      background-image: url(../../img/desktop-photos@2/subscribe-desk@2.jpg);
+      background-image: url(/img/desktop-photos@2/subscribe-desk@2.jpg);
     }
   }
 
@@ -320,19 +293,6 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
-
-  .modal-close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    padding: 0;
-    width: 28px;
-    height: 28px;
-    border: none;
-    background-color: transparent;
-    stroke: var(--text-color-black);
-    cursor: pointer;
-  }
 }
 
 /* ============================================MODAL======================================================== */
@@ -351,17 +311,17 @@
 }
 
 .modal-back-img {
-  background-image: url(../img/desktop/subscribe-modal-desk.jpg);
+  background-image: url(/img/desktop/subscribe-modal-desk.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 196px;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .modal-back-img {
-    background-image: url(../../img/desktop-photos@2/subscribe-modal-desk@2x.jpg);
+    background-image: url(/img/desktop-photos@2/subscribe-modal-desk@2x.jpg);
   }
 }
 

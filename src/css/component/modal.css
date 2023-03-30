@@ -39,14 +39,15 @@
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-  max-width: 516px;
-  min-height: 414px;
-  font-size: 18px;
-  line-height: 1.33;
+  width: 100%;
+  max-width: 311px;
+  min-height: 350px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: -0.02em;
   background-color: var(--text-color-title);
-  background-image: url('/img/desktop/pop-up-chocolate.png');
-  background-size: 282px 318px;
+  background-image: url('/img/mobile/pop-up-chocolate.png');
+  background-size: 276px 231px;
   background-repeat: no-repeat;
   background-position: left bottom;
   color: var(--text-color-white);
@@ -56,7 +57,28 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .modal-pop-up {
-    background-image: url('/img/desktop-photos@2/pop-up-chocolate@2.png');
+    background-image: url('/img/mobile@2/pop-up-chocolate@2.png');
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-pop-up {
+    background-image: url('/img/desktop/pop-up-chocolate.png');
+    background-size: 282px 318px;
+    max-width: 516px;
+    min-height: 414px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media (min-width: 768px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-pop-up {
+      background-image: url('/img/desktop-photos@2/pop-up-chocolate@2.png');
+    }
   }
 }
 
