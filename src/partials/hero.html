@@ -95,7 +95,7 @@
           class="hero-half-input"
           id="Name"
           placeholder="Name"
-          pattern="[A-Za-z\s]{2,}"
+          pattern="[A-Za-z\sА-Яа-яІіЇї]{2,}"
           required
           title="Імя повинно складатися щонайменше з 3 літер"
         />
@@ -104,7 +104,7 @@
           class="hero-half-input"
           id="Surname"
           placeholder="Surname"
-          pattern="[A-Za-z\s]{2,}"
+          pattern="[A-Za-z\sА-Яа-яІіЇї]{2,}"
           required
           title="Прізвище повинно складатися щонайменше з 3 літер"
         />
@@ -130,7 +130,8 @@
           id="phone"
           name="phone"
           placeholder="Phone number"
-          pattern="[0-9]{10}"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
           required
         />
       </div>
