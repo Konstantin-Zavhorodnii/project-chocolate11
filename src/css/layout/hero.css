@@ -482,6 +482,7 @@ textarea {
   flex-direction: column;
   gap: 21px;
   margin-bottom: 18px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -662,4 +663,22 @@ textarea {
   .hero-swiper-list {
     margin-bottom: 40px;
   }
+}
+
+.ukraine-flag-svg {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+}
+
+@media screen and (min-width:768px) {
+    .ukraine-flag-svg {
+      top: 24px;
+    }
+  }
+
+
+
+.hero-phone-input {
+    padding-left: 56px;
 }
