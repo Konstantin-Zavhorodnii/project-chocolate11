@@ -122,13 +122,21 @@
       <div class="hero-input-container">
         <input
           type="tel"
-          class="hero-input"
+          class="hero-input hero-phone-input"
           id="phone"
           name="phone"
           placeholder="Phone number"
-          pattern="[0-9]{10}"
+          pattern="^\+[0-9]{12}"
+          title='Номер повинен складатися із 12 цифр, а також починатись із
+          символа "+" та коду країни'
           required
         />
+        <svg width="24" height="19" fill="none" class="ukraine-flag-svg"
+                xmlns="http://www.w3.org/2000/svg"><g 
+                clip-path="url(#a)"><path d="M23.874.294H.182v17.631h23.692V.294Z" 
+                fill="gold"/>  <path fill-rule="evenodd" clip-rule="evenodd" d="M.182.294h23.692V9.11H.182V.294Z" fill="#0057B7"/>
+                  </g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .1)" d="M0 0h24v18H0z"/></clipPath></defs>
+        </svg>
       </div>
 
       <label for="Card" class="hero-label">Card number</label>
@@ -141,8 +149,11 @@
             placeholder="Card number"
             minlength="1"
             pattern="[0-9]{16}"
+            title='Номер картки повинен складатися із 16 цифр'
             required
           />
+          
+          
           <div class="card-images">
             <!-- <svg class="card-svg"  height="20px">
                 <use href="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"> </use>
@@ -150,6 +161,7 @@
               <svg class="card=svg"  height="20px">
                 <use href="https://bin.bnbstatic.com/static/images/fiat/card/mastercard.svg"> </use>
               </svg> -->
+              
             <img
               src="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"
               alt="visa"
