@@ -88,7 +88,7 @@
 
 .video-container {
     position: relative;
-    background-image: url('../img/mobile/video-overlay.jpg');
+    background-image: url('/img/mobile/video-overlay.jpg');
     background-size: cover;
     width: 600px;
     height: 400px;
@@ -96,13 +96,13 @@
 
 @media screen and (min-width: 768px) {
     .video-container {
-        background-image: url('../img/tablet/video-overlay.jpg');
+        background-image: url('/img/tablet/video-overlay.jpg');
     }
 }
 
 @media screen and (min-width: 1200px) {
     .video-container {
-        background-image: url('../img/desktop/video-overlay-img.jpg');
+        background-image: url('/img/desktop/video-overlay-img.jpg');
     }
 }
 
