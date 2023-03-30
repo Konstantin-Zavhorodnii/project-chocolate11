@@ -75,3 +75,40 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
     
   },
 });
+
+
+const heroSwiper = new Swiper('.hero-swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  autoplay: {
+    delay: 5000,
+  },
+  speed: 1000,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  slidesPerView: (1),
+  spaceBetween: 16,
+  
+  
+  // breakpoints: {
+  //   175: {
+  //     slidesPerView: 1,
+  //     slidesPerGroup: 1,
+  //     spaceBetween: 10,
+  //   },
+
+  //   375: {
+  //     slidesPerView: 1,
+  //     slidesPerGroup: 1,
+  //     spaceBetween: 10,
+  //   },
+
+    
+  // },
+});
