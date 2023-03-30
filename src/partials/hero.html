@@ -10,7 +10,7 @@
         </h2>
 
         <div class="buttons-container">
-          <button type="button" class="buy-btn" data-modal-open>Buy now</button>
+          <button type="button" class="buy-btn js-open-modal" data-modal="hero-modal">Buy now</button>
 
           <a class="how-made-btn" href="#how-its-made">How it’s made</a>
 
@@ -28,170 +28,191 @@
   </div>
 </section>
 
-<div class="hero-backdrop is-hidden" data-modal>
-  <div class="hero-modal">
-    <button class="hero-close-btn" data-modal-close>
-      <svg class="hero-close-svg" width="14px" height="14px">
-        <use href="/img/icons.svg#x"></use>
-      </svg>
-    </button>
-    <form class="hero-form">
-      <h3 class="hero-form-title">
-        BUY <span class="hero-form-span">NOW</span>
-      </h3>
-
-      <div class="hero-swiper">
-        <ul class="swiper-wrapper hero-swiper-list">
-          <li class="swiper-slide buy-card-container">
-            <img
-              src="/img/desktop/buy-now-chocolate1.jpg"
-              alt="dark chocolate"
-              srcset="
-                /img/desktop/buy-now-chocolate1.jpg            1x,
-                /img/desktop-photos@2/buy-now-chocolate1@2.jpg 2x
-              "
-              width="120"
-              loading="lazy"
-            />
-            <button class="buy-weight-btn" type="button">100 g</button>
-          </li>
-
-          <li class="swiper-slide buy-card-container">
-            <img
-              src="/img/desktop/buy-now-chocolate2.jpg"
-              alt="dark chocolate"
-              srcset="
-                /img/desktop/buy-now-chocolate2.jpg            1x,
-                /img/desktop-photos@2/buy-now-chocolate2@2.jpg 2x
-              "
-              width="120"
-              loading="lazy"
-            />
-            <button class="buy-weight-btn" type="button">100 g</button>
-          </li>
-
-          <li class="swiper-slide buy-card-container">
-            <img
-              src="/img/desktop/buy-now-chocolate3.jpg"
-              alt="dark chocolate"
-              srcset="
-                /img/desktop/buy-now-chocolate3.jpg            1x,
-                /img/desktop-photos@2/buy-now-chocolate3@2.jpg 2x
-              "
-              width="120"
-              loading="lazy"
-            />
-            <button class="buy-weight-btn" type="button">100 g</button>
-          </li>
-        </ul>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <label for="Name" class="hero-label"> Personal information </label>
-      <div class="hero-input-container">
-        <input
-          type="text"
-          class="hero-half-input"
-          id="Name"
-          placeholder="Name"
-          pattern="[A-Za-z\s]{2,}"
-          required
-          title="Імя повинно складатися щонайменше з 3 літер"
-        />
-        <input
-          type="text"
-          class="hero-half-input"
-          id="Surname"
-          placeholder="Surname"
-          pattern="[A-Za-z\s]{2,}"
-          required
-          title="Прізвище повинно складатися щонайменше з 3 літер"
-        />
-      </div>
-
-      <label for="Email" class="hero-label">Email</label>
-      <div class="hero-input-container">
-        <input
-          type="email"
-          class="hero-input"
-          id="Email"
-          placeholder="Enter your email"
-          minlength="4"
-          required
-        />
-      </div>
-
-      <label for="phone" class="hero-label">Phone number</label>
-      <div class="hero-input-container">
-        <input
-          type="tel"
-          class="hero-input hero-phone-input"
-          id="phone"
-          name="phone"
-          placeholder="Phone number"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          title="xxx-xxx-xx-xx"
-          required
-        />
-        <svg width="24" height="19" fill="none" class="ukraine-flag-svg"
-                xmlns="http://www.w3.org/2000/svg"><g 
-                clip-path="url(#a)"><path d="M23.874.294H.182v17.631h23.692V.294Z" 
-                fill="gold"/>  <path fill-rule="evenodd" clip-rule="evenodd" d="M.182.294h23.692V9.11H.182V.294Z" fill="#0057B7"/>
-                  </g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .1)" d="M0 0h24v18H0z"/></clipPath></defs>
+<!-- <div class="hero-backdrop is-hidden" data-modal> -->
+  <div class="modal buy-modal" data-modal="hero-modal">
+    <div class="hero-modal">
+      <button class="hero-close-btn js-modal-close">
+        <svg class="hero-close-svg" width="14px" height="14px">
+          <use href="/img/icons.svg#x"></use>
         </svg>
-      </div>
-
-      <label for="Card" class="hero-label">Card number</label>
-      <div class="hero-input-container">
-        <div class="hero-card-input">
+      </button>
+      <form class="hero-form form">
+        <h3 class="hero-form-title">
+          BUY <span class="hero-form-span">NOW</span>
+        </h3>
+  
+        <div class="hero-swiper">
+          <ul class="swiper-wrapper hero-swiper-list">
+            <li class="swiper-slide buy-card-container">
+              <img
+                src="/img/desktop/buy-now-chocolate1.jpg"
+                alt="dark chocolate"
+                srcset="
+                  /img/desktop/buy-now-chocolate1.jpg            1x,
+                  /img/desktop-photos@2/buy-now-chocolate1@2.jpg 2x
+                "
+                width="120"
+                loading="lazy"
+              />
+              <button class="buy-weight-btn" type="button">100 g</button>
+            </li>
+  
+            <li class="swiper-slide buy-card-container">
+              <img
+                src="/img/desktop/buy-now-chocolate2.jpg"
+                alt="dark chocolate"
+                srcset="
+                  /img/desktop/buy-now-chocolate2.jpg            1x,
+                  /img/desktop-photos@2/buy-now-chocolate2@2.jpg 2x
+                "
+                width="120"
+                loading="lazy"
+              />
+              <button class="buy-weight-btn" type="button">100 g</button>
+            </li>
+  
+            <li class="swiper-slide buy-card-container">
+              <img
+                src="/img/desktop/buy-now-chocolate3.jpg"
+                alt="dark chocolate"
+                srcset="
+                  /img/desktop/buy-now-chocolate3.jpg            1x,
+                  /img/desktop-photos@2/buy-now-chocolate3@2.jpg 2x
+                "
+                width="120"
+                loading="lazy"
+              />
+              <button class="buy-weight-btn" type="button">100 g</button>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+  
+        <label for="Name" class="hero-label"> Personal information </label>
+        <div class="hero-input-container">
           <input
-            type="tel"
+            type="text"
+            class="hero-half-input"
+            id="Name"
+            placeholder="Name"
+            pattern="[A-Za-z\s]{2,}"
+            required
+            title="Імя повинно складатися щонайменше з 3 літер"
+          />
+          <input
+            type="text"
+            class="hero-half-input"
+            id="Surname"
+            placeholder="Surname"
+            pattern="[A-Za-z\s]{2,}"
+            required
+            title="Прізвище повинно складатися щонайменше з 3 літер"
+          />
+        </div>
+  
+        <label for="Email" class="hero-label">Email</label>
+        <div class="hero-input-container">
+          <input
+            type="email"
             class="hero-input"
-            id="Card"
-            placeholder="Card number"
-            minlength="1"
-            pattern="[0-9]{16}"
-            title='Номер картки повинен складатися із 16 цифр'
+            id="Email"
+            placeholder="Enter your email"
+            minlength="4"
             required
           />
-          
-          
-          <div class="card-images">
-            <!-- <svg class="card-svg"  height="20px">
-                <use href="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"> </use>
-              </svg>
-              <svg class="card=svg"  height="20px">
-                <use href="https://bin.bnbstatic.com/static/images/fiat/card/mastercard.svg"> </use>
-              </svg> -->
-              
-            <img
-              src="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"
-              alt="visa"
-              class="card-img"
-              loading="lazy"
+        </div>
+  
+        <label for="phone" class="hero-label">Phone number</label>
+        <div class="hero-input-container">
+          <input
+            type="tel"
+            class="hero-input hero-phone-input"
+            id="phone"
+            name="phone"
+            placeholder="Phone number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            required
+          />
+          <svg width="24" height="19" fill="none" class="ukraine-flag-svg"
+                  xmlns="http://www.w3.org/2000/svg"><g 
+                  clip-path="url(#a)"><path d="M23.874.294H.182v17.631h23.692V.294Z" 
+                  fill="gold"/>  <path fill-rule="evenodd" clip-rule="evenodd" d="M.182.294h23.692V9.11H.182V.294Z" fill="#0057B7"/>
+                    </g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .1)" d="M0 0h24v18H0z"/></clipPath></defs>
+          </svg>
+        </div>
+  
+        <label for="Card" class="hero-label">Card number</label>
+        <div class="hero-input-container">
+          <div class="hero-card-input">
+            <input
+              type="tel"
+              class="hero-input"
+              id="Card"
+              placeholder="Card number"
+              minlength="1"
+              pattern="[0-9]{16}"
+              title='Номер картки повинен складатися із 16 цифр'
+              required
             />
-            <img
-              src="https://bin.bnbstatic.com/static/images/fiat/card/mastercard.svg"
-              alt="mastercard"
-              class="card-img"
-              loading="lazy"
-            />
+            
+            
+            <div class="card-images">
+              <svg class="card-svg"  height="20px">
+                  <use href="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"> </use>
+                </svg>
+                <svg class="card=svg"  height="20px">
+                  <use href="https://bin.bnbstatic.com/static/images/fiat/card/mastercard.svg"> </use>
+                </svg>
+                
+              <img
+                src="https://bin.bnbstatic.com/static/images/fiat/card/visa.svg"
+                alt="visa"
+                class="card-img"
+                loading="lazy"
+              />
+              <img
+                src="https://bin.bnbstatic.com/static/images/fiat/card/mastercard.svg"
+                alt="mastercard"
+                class="card-img"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
-      </div>
-
-      <label for="Comment" class="hero-label">Comment</label>
-      <div class="hero-input-container">
-        <textarea
-          name="Comment"
-          id="Comment"
-          class="hero-input hero-textarea"
-          placeholder="Enter-text"
-          required
-        ></textarea>
-      </div>
-
-      <button type="submit" class="hero-form-btn">Submit</button>
-    </form>
+  
+        <label for="Comment" class="hero-label">Comment</label>
+        <div class="hero-input-container">
+          <textarea
+            name="Comment"
+            id="Comment"
+            class="hero-input hero-textarea"
+            placeholder="Enter-text"
+            required
+          ></textarea>
+        </div>
+  
+        <button type="submit" class="hero-form-btn js-pop-up" data-modal="open-modal-pop-up">Submit</button>
+      </form>
+    </div>
   </div>
+
+
+  <div class="overlay js-overlay-modal"></div>
+
+  <div
+  class="modal modal-pop-up modal-by-now success-modal"
+  data-modal="open-modal-pop-up"
+>
+  <button class="modal-close pop-up-close js-modal-close">
+    <svg class="pop-up-icon">
+      <use href="../img/icons.svg#x"></use>
+    </svg>
+  </button>
+  <h2 class="title pop-up-title">Thank you!</h2>
+  <p>
+    We are glad that you ordered our chocolate and we are giving you a 20%
+    discount on all our products.
+  </p>
 </div>
+<!-- </div> -->
