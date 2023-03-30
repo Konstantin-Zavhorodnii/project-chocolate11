@@ -88,7 +88,11 @@ const heroSwiper = new Swiper('.hero-swiper', {
   breakpoints: {
     175: {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 18,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 18,
     },
   },
 });
