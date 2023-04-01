@@ -31,7 +31,6 @@
                 /img/desktop/reviews-nazar.jpg            1x,
                 /img/desktop-photos@2/reviews-nazar@2.jpg 2x
               "
-
               src="../img/desktop/reviews-nazar.jpg"
               loading="lazy"
               width="80"
@@ -140,7 +139,7 @@
         <use href="/img/icons.svg#x"></use>
       </svg>
     </button>
-    <form>
+    <form class="modal-second">
       <h2 class="modal-title title">
         <span class="review-line-break">Leave a review</span> about
         <span class="reviews-title-brand">our chocolate</span>
@@ -192,16 +191,10 @@
           placeholder="Enter text"
         ></textarea>
       </div>
-      <button
-        class="reviews-submit js-modal-close js-open-modal"
-        type="submit"
-        data-modal="reviews-pop-up"
-      >
-        Send
-      </button>
+      <button class="reviews-submit js-pop-up" type="submit">Send</button>
     </form>
   </div>
-  <div class="reviews-pop-up modal-pop-up modal" data-modal="reviews-pop-up">
+  <div class="reviews-pop-up modal-pop-up modal success-second-modal">
     <button class="modal-close pop-up-close js-modal-close">
       <svg class="pop-up-icon">
         <use href="/img/icons.svg#x"></use>

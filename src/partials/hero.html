@@ -38,13 +38,12 @@
         <use href="/img/icons.svg#x"></use>
       </svg>
     </button>
-    <form class="hero-form">
+    <form class="hero-form modal-form">
       <h3 class="hero-form-title">
         BUY <span class="hero-form-span">NOW</span>
       </h3>
 
       <div class="hero-swiper">
-
         <ul class="buy-list swiper-wrapper">
           <li class="buy-card swiper-slide">
             <div class="buy-card-container">
@@ -90,7 +89,6 @@
               />
               <button class="buy-weight-btn" type="button">300 g</button>
             </div>
-
           </li>
         </ul>
         <div class="swiper-pagination"></div>
@@ -208,17 +206,11 @@
         ></textarea>
       </div>
 
-      <button
-        type="submit"
-        class="hero-form-btn js-modal-close js-open-modal"
-        data-modal="buy-now-pop-up"
-      >
-        Submit
-      </button>
+      <button type="submit" class="hero-form-btn js-pop-up">Submit</button>
     </form>
   </div>
 
-  <div class="buy-now-pop-up modal-pop-up modal" data-modal="buy-now-pop-up">
+  <div class="buy-now-pop-up modal-pop-up modal success-modal">
     <button class="modal-close pop-up-close js-modal-close">
       <svg class="pop-up-icon">
         <use href="/img/icons.svg#x"></use>
