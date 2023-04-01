@@ -316,7 +316,7 @@
 }
 
 .hero-form {
-  padding: 32px 24px;
+  padding: 32px 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -346,6 +346,16 @@
 
 .hero-form-span {
   color: var(--text-color-black);
+}
+
+.hero-modal-img {
+  width: 160px;
+}
+
+@media screen and (min-width: 768px){
+  .hero-modal-img {
+    width: 120px;
+  }
 }
 
 .hero-label {
@@ -540,7 +550,7 @@ textarea {
 
 /* .buy-list {
     display: flex;
-    gap: 16px;
+    
 } */
 
 @media screen and (min-width: 768px) {
@@ -554,13 +564,19 @@ textarea {
 } */
 
 .buy-card {
-  max-width: 160px;
+  max-width: 231px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   background-color: var(--text-color-white);
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .buy-card {
+    max-width: 160px;
+  }
 }
 
 .buy-card:hover,
