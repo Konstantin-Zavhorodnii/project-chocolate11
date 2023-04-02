@@ -26,7 +26,7 @@
     <title>Simply chocolate: Магазин Шоколаду</title>
     <!-- base styles -->
     
-    <script type="module" crossorigin src="/project-chocolate11/assets/index-42f37d13.js"></script>
+    <script type="module" crossorigin src="/project-chocolate11/assets/index-fa14ca5a.js"></script>
     <link rel="stylesheet" href="/project-chocolate11/assets/index-a83b7871.css">
   </head>
   <body>
@@ -186,13 +186,12 @@
         <use href="/project-chocolate11/assets/icons-82a3c27a.svg#x"></use>
       </svg>
     </button>
-    <form class="hero-form">
+    <form class="hero-form modal-form">
       <h3 class="hero-form-title">
         BUY <span class="hero-form-span">NOW</span>
       </h3>
 
       <div class="hero-swiper">
-
         <ul class="buy-list swiper-wrapper">
           <li class="buy-card swiper-slide">
             <div class="buy-card-container">
@@ -229,7 +228,6 @@
               />
               <button class="buy-weight-btn" type="button">300 g</button>
             </div>
-
           </li>
         </ul>
         <div class="swiper-pagination"></div>
@@ -347,17 +345,11 @@
         ></textarea>
       </div>
 
-      <button
-        type="submit"
-        class="hero-form-btn js-modal-close js-open-modal"
-        data-modal="buy-now-pop-up"
-      >
-        Submit
-      </button>
+      <button type="submit" class="hero-form-btn js-pop-up">Submit</button>
     </form>
   </div>
 
-  <div class="buy-now-pop-up modal-pop-up modal" data-modal="buy-now-pop-up">
+  <div class="buy-now-pop-up modal-pop-up modal success-modal">
     <button class="modal-close pop-up-close js-modal-close">
       <svg class="pop-up-icon">
         <use href="/project-chocolate11/assets/icons-82a3c27a.svg#x"></use>
@@ -985,7 +977,6 @@
           <div class="reviews-image">
             <img
               srcset="data:image/jpeg;base64,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 1x, data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAKAAoAMBIgACEQEDEQH/xAAzAAAABwEBAAAAAAAAAAAAAAAAAgMEBQYHAQgBAAMBAQEAAAAAAAAAAAAAAAABAwIEBf/aAAwDAQACEAMQAAAA38AAAAAJS6nK2gwNejp9EnFRRp2cSEMQL3ZMkLWHoVTB9Krz24AbkAAAAAF8/TeU8vWa80O4x6LCVGT2QQm0mQXXhQbKqkY2hpeFFf8AYfJ13ry74ALc4znQvL0bQrhorxegtZa2XebsxzljWOlEzhdl7Z1Zonbe0tHeNCc527HbK/NRE9+hdI8d+vujloeG2fN4VWm6c/0X91GP+brgK/cKzWUFLysyxSk7FR2Z4tMsKRVk2c3iirIya13fMK0eZjEFxP0/KVLwAfRsyvPJ2T6ZO8neVxWbs3O1e0RVlSuIKKSpE2qQrM7AdfFI22gqPPE5yCpLvQATstZdyrfyoKcPouox45eqykutSbtBy0DjdVuZjosc7OAKJT2s3XK/UnlvIcc7pJDnM6uy1VtnH2lZPI9WSR4N5djqhg1eewNIK952/ONTyv1GGqeIvb+YJ+VwUPKY6XOjysUB3pxSJHm7JgsH1k1FMGFJAc7WCneB4nPbmX6itAAJ+ccU97+cmsSKYiFOFDDgoA4M4BqmYocUIoA2gekAMAEwAAAADMPNvuHgeAR6rysMs7YIJ5TIrMrUDzVtSDzr6O1A4AAAAAH/xAA5EAACAQMCAwUGBAQHAQAAAAABAgMABBEFIQYSMQcQIkFREyBDYXFyFDJSkRUjM0IkMGJzgZKx0f/aAAgBAQABPwD3ZJI4lLyOFUdSTirziaytwVhjaZ/XotT8T38gwpSNf9I/+1PrF5Ox57qVvq5qWQOTztzfU0oVWyp5fptUOp6hAR7K/nUegc4q24u1SM/zWSYf6wAf3WrTjDTZsLcK0D+p8S1FNFPGskUiujdGU5B/ytU43023lktbFlubldmI3jSn1a6vpee4lLH08h9BUjZAIqd2UGmkyxNCTbFM2CMUzttnqaDNg4rmd9s1p+o3lhJzWtwyeq/2n6itI4wsr0pbXnLbz+R/sb33ZURndgqgEkk4AArj/j+8uWfTtJkaK16STjZpfp6LXDjlfaVFLiopCVqaJ3HrTWkg35Qfl0prbA/Kc/KuXoMUY+Y7Zr2LE9KEGB4qbEeanlLNXC3HLWLpZanJz2pOFmO7R1G6OiujBlIBBByCPd404tN5NJpllL/h0OJnHxGHl9orVIi0eR0AzWiDlMn/ABUJzVsAp6mg69aLoepGKaSPB6VIYicilkjG+aN1CDtX4tDzBRUuWDGpkbNTDIxXZ9xs9hOujajITaO2IHPwn9ztD4lfS7AWFq2Lu6U5I+HFULsWG9Xsyx22MZLVoqgrJ9RUM0cZHMdvOjqNsh5lGdvWpdctySAKOqJ1DGjq4Jxmn1HbZ6fVCeppdRO/ipdW5WG9Jq5zTX8LrtX58nOauhyStXZnxWNYsDp10+bu0H/eLunnitoJZ5W5Y40Lu3oFGSa1m/m1XU7u/l+K/hH6VHQUCFkGKuYTNAOXcgmtGVlWRSMHPStSM8bZANPeXHTBqa7dHKurBvSkvG8mNLcOT1ozSkedPK4ozt60bkg9DSTyEA42qGaYnBq0Dezyx61qowUYdTtXDWo3Wj6ra38XWN/Ev6l6MtW1xFc28NxE3NHLGrofUMMiu0jUxaaTDZK38y7k3+xNzUsgUGpJPHtWmxi4jmVjgrhhVykccsDoPzrufXFSQJLH+XNXEUMZPOmxq+htpmDeY2yDTRxbAdBVlYe15SF603D6/hlYAZIrULExSstGNObBr2ELkFs5+RqMQgKuBgdKggQkNy7U4CJ6UsCPKskgzgeEUtoF5pQc5Ndmup+20iW0lOXtH8P2PXafrKtxPJbc21pEkePm3jqbVA/Rae6YmtK1T8Jdc0m6MOVqudV0+W2gjifLhtqhn8IFXcIkzvvU2nSuxwlWmiRLyvM2fkKRBEUUDeufNtG/XwjbzrUlV7hzy1cWUb+IHBo2TrVrbYOahZEq4nyDUWrWnsAhGGq2mWUDbC+VcAXYtdfjjz4LmJ4z/wCiuJ703vEes3PlJezEfTnIFZrPdFIY5o2z0YVbTnG5rmDjamwpr2wjXHNirZvbnw560VK26jGcDzrUU3Mg3HmRRkVia2wcjNbAUZQAamkPJI3oDWcHrVvqE0PnkVw7xF7HWtLdh0uos/QsAalkMskkh6sxb9z7jmrOQPDFJ+pRUfQHNTOFU1NK8h2NWDwW8i8rAYAqXUIWUrzDB9K1GS1e2AyKvYhDc5jPgcA4pGLDrTmnNXrclq3q2B3ZqGUxzRyeaMG/Y5qVDFLJGeqOV/Y47h3PWjThoDGeqH/2oZduWpg7riobNAm561d208EhkilP0qTU7gbYNG7vLjADECoIWaMGRsnHWuXkYgVI1EHzrU5c+zjHluaz3RIZJY4x1Zgv7muKLQ2XEetWx+HfTAfbzkijQ7nrT5jFcL6HY1E21NLyDNW94jAjrU7q6j6VJbM0hONqig5aMyxAb08okPMtdamlCKSegqWQyuznz7s71wtaG+4k0W28pL6EH6c4Jrtg0w2XF8twB4LyBJh9R4D3mnpDykEdRVtOsqI48xvTjmGCdqNlblOZMgjripbRs+CVh9acXqgqGpUugf6uKEEsgAaVqVDESM5rm2q+ueduRT4R1odxrsf0w3vF0dwV8FnA8p+rDkFdsuii/wCH4NThTMtjLv8A7UlDvahVhdexflJ8JqJhKnXenLx7rU93J6V+Ml9KW5bO60szsPSsZ3Jq+uxGORD4j1oUO412OaN/D+HZtTkH82/l8P8AtRVd2UF5aXFpcJzRTxtHIPVXGCK4h0S50LWL3TZ+sL+Fv1ofyt3E0aHdZ3zRkAmoLmOTHSmS1YHKimWAsRgUYIeoAohEGKu70R5VN2piWJJOTQ7+HNEn17WrHTIes0gDN+hBuzVaWkFlawW0CBIYY1jjUdFVRgDu7VuDzrOmfxW0ize2iHIHWSHvNDuzg1BctGetfjm5a/FUb3FS3sjDC7Ufn3Dv7K+E/wCCaadUvI8X14g5QesUXudqHZ8+mzza3pkWbOQ5uIx8FvX7D3H3BWWFc5rcmmHLtR7gO7sy4Be/mi1rU4cWabwRn4zev2e7JGkiOjorIwKspGQQeoIrj/swm04y6pokRksjvJAu7Q0e7NZrG1b1FG0hwop+SAcqnLnzo9woVwF2ZTag8Wp61CY7PrHAdmm+70Wo40jjREQKigKqgYAA6AD3+L+yjTta573TOSyvTuyfCkrW+G9a0Gf2OpWMkP6X6o/2sO/y7jI3QbDuz3aHw7rGvXHsNNs3mP8Ac3RE+5q4T7LNN0Ux3eplLy+6gfBj/wAq8tbW8t5ILqCOaFxho5FDKfqDWudi/D19zSabNJYS+n9WKtT7HuL7Mk20UF4nrE/Kf2ervhTiWyH+J0a9j+ZhfFTQyxbOjKfmCKjhllOI4nf7QTVnwtxJekC20W+k+YhfFaZ2PcX3m9zFBZJ6zPk/slaJ2NcPWHJJqU8t/L6f04qtbS0sYEt7S3ihiXokahFH/A97/8QAJxEAAgIBAwMDBQEAAAAAAAAAAAECEQMQEkEhIjEEIFEwMkJhcZH/2gAIAQIBAT8A0lljF15Y8kvkbbFdkZyXIpp+yefv2x8csn9xHqikIQ0yE+HpmybY1yyu5H5EYyfhDiyrFBjT5OSErVcoyY8k8lpdCXp57bGmY8jS8k59BdKN1cjlYvkhkrMv8L09QvD0o/jGIwrtZLDjk7qnrkjuiyupTEl8DQkQVKtFrOLixNsV/osxx5ejFrKKaoeNrwbZEcfL1fuSH9b/xAAiEQACAgIDAQACAwAAAAAAAAABAgADEBEhMUESBBMgIjD/2gAIAQMBAT8AxXQz8ngRaUHkAUdCMBrqPUh8jVMvI5H8KqNr9NE6h7m4eYcW1+rilPptnoRD2IeI1gHZgcGfcNogcHqDqXJ8kHwyt60r0TzK/wAhA4nBMdA3axK4yz4Hq7gXXkBHUuQNUdec5/GbsQQcwjjrBl5/sIt1ijW+M1N8sIDARqEtvvibEJjt9MTg4ErcMs2q9iFqz6cWv5k5Ripi3KRzP2JHt8XIwYM7wZr/AE//2Q== 2x"
-
               src="../img/desktop/reviews-nazar.jpg"
               loading="lazy"
               width="80"
@@ -1082,7 +1073,7 @@
         <use href="/project-chocolate11/assets/icons-82a3c27a.svg#x"></use>
       </svg>
     </button>
-    <form>
+    <form class="modal-second">
       <h2 class="modal-title title">
         <span class="review-line-break">Leave a review</span> about
         <span class="reviews-title-brand">our chocolate</span>
@@ -1134,16 +1125,10 @@
           placeholder="Enter text"
         ></textarea>
       </div>
-      <button
-        class="reviews-submit js-modal-close js-open-modal"
-        type="submit"
-        data-modal="reviews-pop-up"
-      >
-        Send
-      </button>
+      <button class="reviews-submit js-pop-up" type="submit">Send</button>
     </form>
   </div>
-  <div class="reviews-pop-up modal-pop-up modal" data-modal="reviews-pop-up">
+  <div class="reviews-pop-up modal-pop-up modal success-second-modal">
     <button class="modal-close pop-up-close js-modal-close">
       <svg class="pop-up-icon">
         <use href="/project-chocolate11/assets/icons-82a3c27a.svg#x"></use>
