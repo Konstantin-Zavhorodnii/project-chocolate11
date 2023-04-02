@@ -75,29 +75,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }); // end foreach
 
-  //   popupButtons.forEach(function (item) {
-  //     item.addEventListener('submit', function (e) {
-  //       var parentModal = this.closest('.modal');
-
-  //       parentModal.classList.remove('active');
-  //       openSuccessModal();
-  //     });
-  //   }); // end foreach
-  form.forEach(function (item) {
-    item.addEventListener('submit', e => {
-      e.preventDefault();
-      popupButton.forEach(function (button) {
-        var parentModal = button.closest('.modal');
-        parentModal.classList.remove('active');
-        const modalFields = parentModal.querySelectorAll('input');
-        modalFields.forEach(field => {
-          field.value = '';
-        });
-      });
-      setTimeout(function () {
-        modalSuccess.classList.add('active');
-      }, 300);
+  var modalForm = document.querySelector('.modal-form');
+  modalForm.addEventListener('submit', e => {
+    e.preventDefault();
+    popupButton.forEach(function (button) {
+      var parentModal = button.closest('.modal');
+      parentModal.classList.remove('active');
     });
+    var modalSuccess = document.querySelector('.success-modal');
+    setTimeout(function () {
+      modalSuccess.classList.add('active');
+    }, 300);
+  });
+
+  var modalSecondForm = document.querySelector('.modal-second');
+  modalSecondForm.addEventListener('submit', e => {
+    e.preventDefault();
+    popupButton.forEach(function (button) {
+      var parentModal = button.closest('.modal');
+      parentModal.classList.remove('active');
+    });
+    var modalSuccess = document.querySelector('.success-second-modal');
+    setTimeout(function () {
+      modalSuccess.classList.add('active');
+    }, 300);
   });
 
   document.body.addEventListener(
