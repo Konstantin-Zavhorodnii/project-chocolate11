@@ -17,7 +17,6 @@
   }
 
   .section-subscribe {
-    text-transform: capitalize;
     text-align: center;
     color: var(--text-color-white);
     background-repeat: no-repeat;
@@ -27,7 +26,7 @@
     margin-left: auto;
     margin-right: auto;
     background-position: center;
-    padding: 62px 42px 63px 42px;
+    padding: 62px 10px 63px 10px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -38,8 +37,10 @@
     }
   }
   .subscribe-description {
+    display: block;
     width: 100%;
     max-width: 326px;
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.285;
@@ -151,17 +152,16 @@
   }
 
   .section-subscribe {
-    text-transform: capitalize;
     text-align: center;
     color: var(--text-color-white);
     background-repeat: no-repeat;
     background-image: url(/img/tablet/subcribe-tablet.jpg);
     background-size: cover;
-    max-width: 767px;
+    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
-    padding: 72px 195px;
+    padding: 72px 118px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -172,6 +172,8 @@
     }
   }
   .subscribe-description {
+    margin: auto;
+    font-style: normal;
     width: 100%;
     max-width: 467px;
     font-weight: 400;
@@ -180,8 +182,8 @@
     letter-spacing: -0.02em;
     color: var(--text-color-white);
     margin-bottom: 24px;
+    text-align: center;
   }
-
   .form-subscribe {
     padding: 40px;
     text-align: left;
@@ -273,7 +275,9 @@
     margin-bottom: 24px;
   }
   .subscribe-description {
+    margin: auto;
     width: 100%;
+    font-style: normal;
     max-width: 467px;
     font-weight: 400;
     font-size: 14px;
@@ -281,6 +285,7 @@
     letter-spacing: -0.02em;
     color: var(--text-color-white);
     margin-bottom: 24px;
+    text-align: center;
   }
   .subscribe-btn {
     font-style: normal;
