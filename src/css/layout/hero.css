@@ -1,6 +1,7 @@
 .hero {
   max-width: 375px;
   margin: 0 auto;
+  padding-top: 69px;
   padding-bottom: 72px;
 }
 
@@ -8,6 +9,7 @@
   .hero {
     max-width: 768px;
     margin: 0 auto;
+    padding-top: 80px;
     padding-bottom: 50px;
   }
 }
@@ -160,7 +162,8 @@
   background-color: var(--text-color-title);
   border-radius: 100px;
   border: none;
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -187,7 +190,8 @@
   border-radius: 100px;
   background-color: transparent;
   margin-right: auto;
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1200px) {
@@ -198,7 +202,6 @@
 
 .how-made-btn:hover,
 .how-made-btn:focus {
-  background-color: var(--text-color-white);
   color: var(--text-color-title);
   border: 1px solid var(--text-color-title);
 }
@@ -219,7 +222,7 @@
   background-color: transparent;
   border-radius: 10px;
   padding: 5px 16px;
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-btn:hover,
@@ -233,7 +236,6 @@
 }
 
 .scroll-div {
-  background-color: var(--text-color-white);
   background-color: currentColor;
   padding: 8px;
   border-radius: 50%;
@@ -256,6 +258,7 @@
   width: 32px;
   height: 32px;
   fill: var(--text-color-title);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-backdrop {
